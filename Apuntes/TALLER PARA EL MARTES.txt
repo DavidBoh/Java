@@ -1,0 +1,13 @@
+taller
+
+*sin flow layout, sino null con set bounds
+*clase principal y minimo 3 clases secundarias 
+
+las 3 clases secundarias deben tener como minimo las siguientes caracteristicas:
+secundaria 1: un formulario de datos (boton imprimir, donde muestre toda la info ingresada)
+
+secundaria 2: formula matematica, minimo 3 variables y con un contexto
+
+secundaria 3: crear un arreglo y ordenarlo. 
+*pedir tamaño y datos de arreglo para ordenarlo.
+orden ascendente o descendente con 1 metodo de ordenamiento: quicksort, burbuja o cualquiera 

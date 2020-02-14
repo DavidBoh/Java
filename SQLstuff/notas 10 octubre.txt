@@ -1,0 +1,26 @@
+id =  para definir variable
+int= integer
+
+double 
+float== decimal
+
+char
+string= varchar
+
+boolean=boolean
+
+date==datetime
+
+id primary key==inmodificable, es unica, no puede estar vacia, no puede ser un dato que pueda ser variable
+
+varchar(n) n= cantidad de caracteres permitidos, igual que en un textfield, no igual que un array.
+
+Create -> insert
+Read -> select
+Update
+Delete
+
+select * from ....
+para traer todos losdatos
+
+select * from nombretabla where id>n; para solo un usuariio

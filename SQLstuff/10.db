@@ -1,0 +1,28 @@
+create table usuarios(
+id integer primary key autoincrement, 
+nombre varchar(25) not null,
+clave varchar(25),
+valido boolean default true
+);
+
+insert into usuarios(nombre,clave)
+	      values('Misael','ClaveMax1');
+	      
+insert into usuarios(clave,valido,nombre)
+		values('Fernando','false','Admin123');
+		
+select * from usuarios;
+
+update usuarios set clave='ClaveMax1',nombre='Misael'
+where id=1;
+
+insert into usuarios(nombre,clave)
+	     values('Michael','Jackson');
+	 
+insert into usuarios(clave,nombre)
+	  values('Cristiano','CR7');
+
+delete from usuarios where valido='false';	 
+
+
+

@@ -1,0 +1,8 @@
+Nombre: Dav
+Apellido: B
+Edad: 27
+Género: Masculino
+Estrato: 3
+Tipo de Vivienda: Familiar
+Dirección: Aaa
+Teléfono: 1234

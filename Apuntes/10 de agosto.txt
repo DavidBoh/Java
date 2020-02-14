@@ -1,0 +1,136 @@
+Encapsulamiento
+
+*Publico
+*Protegido
+*Privado
+
+Aplica a clases, atributos y metodos
+
+Persona:						->Herencia: Esdudiante
+
+Public String Nombre						Hereda todo lo publico y protegido
+
+Protected int edad						Public String Nombre
+
+private boolean circuncidado					Protected int edad
+
+
+Estudiar();							Estudiar();
+Trabajar();							Trabajar();
+
+
+extends -> heredar
+
+Polimorfismo
+
+public class Carro() {
+String color, marca, combustible; 
+int modelo, cilindraje;
+
+
+Public void Encender(){
+}
+Public void apagar()
+}
+}
+
+
+
+
+
+public class Estufa(){
+
+String marca, combustible, color;
+int puestos, horno;
+
+
+public void Encender() {
+}
+
+public void Apagar () {
+
+}
+
+}
+
+Herencia:
+
+public class Estufa extends carro (){
+
+String marca, combustible, color;
+int puestos, horno;
+
+
+public void Encender() {
+}
+
+public void Apagar () {
+
+}
+
+}
+
+
+include=import
+
+import java.util.Scanner;
+
+	java.awt.*	
+	javax.swing.*
+
+
+
+public int encender(){
+intx=inicio;
+x++;
+return X;
+}
+
+public int encender(int inicio){
+intx=0;
+x++;
+return X;
+}
+
+
+Scanner tec = new Scanner(System.in);
+a= tec.nextInt();
+    nextDouble();
+    
+b=tec.nextInt();
+      nextDouble();
+
+System.out.println("El valor de a es:"+a);
+
+
+array: 
+
+int a[]
+
+matrices:
+
+ new int [5][5];
+
+
+
+Primero imprime Misael luego Ferney
+
+public class Humano{
+
+ String Nombre="Ferney";
+
+public static void main (string [] args) {
+
+String Nombre
+Nombre="Misael";
+
+System.out.println(Nombre);
+
+public void imprimir () {
+ System.out.println(Nombre);
+}
+
+
+
+
+

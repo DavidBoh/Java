@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="add81774-5ab2-472b-bae2-633a46044032" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1WfOid57tEwJes3epFuDsdLhTIM" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RunManager">
+    <configuration name="CalculadoraMVC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="calculadoramvc.CalculadoraMVC" />
+      <module name="CalculadoraMVC" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="calculadoramvc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CalculadoraMVC" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="add81774-5ab2-472b-bae2-633a46044032" name="Default Changelist" comment="" />
+      <created>1579537311166</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1579537311166</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="711" y="431" width="488" height="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1579537333785">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state x="711" y="431" width="488" height="265" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.41.1920.1039@0.41.1920.1039" timestamp="1579537333785" />
+    <state width="1300" height="156" key="GridCell.Tab.0.bottom" timestamp="1580740372175">
+      <screen x="0" y="37" width="1366" height="731" />
+    </state>
+    <state width="1300" height="156" key="GridCell.Tab.0.bottom/0.37.1366.731@0.37.1366.731" timestamp="1580740372175" />
+    <state width="1354" height="258" key="GridCell.Tab.0.bottom/0.41.1920.1039@0.41.1920.1039" timestamp="1579537414584" />
+    <state width="1300" height="156" key="GridCell.Tab.0.center" timestamp="1580740372173">
+      <screen x="0" y="37" width="1366" height="731" />
+    </state>
+    <state width="1300" height="156" key="GridCell.Tab.0.center/0.37.1366.731@0.37.1366.731" timestamp="1580740372173" />
+    <state width="1354" height="258" key="GridCell.Tab.0.center/0.41.1920.1039@0.41.1920.1039" timestamp="1579537414584" />
+    <state width="1300" height="156" key="GridCell.Tab.0.left" timestamp="1580740372172">
+      <screen x="0" y="37" width="1366" height="731" />
+    </state>
+    <state width="1300" height="156" key="GridCell.Tab.0.left/0.37.1366.731@0.37.1366.731" timestamp="1580740372172" />
+    <state width="1354" height="258" key="GridCell.Tab.0.left/0.41.1920.1039@0.41.1920.1039" timestamp="1579537414583" />
+    <state width="1300" height="156" key="GridCell.Tab.0.right" timestamp="1580740372174">
+      <screen x="0" y="37" width="1366" height="731" />
+    </state>
+    <state width="1300" height="156" key="GridCell.Tab.0.right/0.37.1366.731@0.37.1366.731" timestamp="1580740372174" />
+    <state width="1354" height="258" key="GridCell.Tab.0.right/0.41.1920.1039@0.41.1920.1039" timestamp="1579537414584" />
+    <state x="616" y="388" key="com.intellij.ide.util.TipDialog" timestamp="1579537316446">
+      <screen x="0" y="41" width="1920" height="1039" />
+    </state>
+    <state x="616" y="388" key="com.intellij.ide.util.TipDialog/0.41.1920.1039@0.41.1920.1039" timestamp="1579537316446" />
+  </component>
+</project>

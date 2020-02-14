@@ -1,0 +1,22 @@
+fecha parciales:
+14 septiembre
+19 octubre
+16 noviembre 
+
+
+JTextield nombre;
+JComboBox tipo_doc;
+
+nombre=new JTextField(10);
+tipo_doc=new JComboBox();
+
+tipo.addItem("C. C.");
+tipo.addItem("T. I.");
+tipo.addItem("R. C.");
+
+48 labels
+
+23textfields
+18 combo box
+
+2 botones
