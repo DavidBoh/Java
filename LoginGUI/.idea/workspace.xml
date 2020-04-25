@@ -1,32 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="de75f57a-c521-4c7f-b7bf-24a2a843753f" name="Default Changelist" comment="" />
+    <list default="true" id="de75f57a-c521-4c7f-b7bf-24a2a843753f" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../GUIJava/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIJava/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1b2QOYw4eXyCBfzGsPkoqjKqslb" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
+  <component name="RunManager">
+    <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="GUI" />
+      <module name="LoginGUI" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
       <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
+        <item itemvalue="Application.GUI" />
       </list>
-    </option>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -40,5 +50,23 @@
       <updated>1587827676072</updated>
     </task>
     <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state width="1300" height="163" key="GridCell.Tab.0.bottom" timestamp="1587837364625">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1300" height="163" key="GridCell.Tab.0.bottom/0.0.1366.742@0.0.1366.742" timestamp="1587837364625" />
+    <state width="1300" height="163" key="GridCell.Tab.0.center" timestamp="1587837364623">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1300" height="163" key="GridCell.Tab.0.center/0.0.1366.742@0.0.1366.742" timestamp="1587837364623" />
+    <state width="1300" height="163" key="GridCell.Tab.0.left" timestamp="1587837364622">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1300" height="163" key="GridCell.Tab.0.left/0.0.1366.742@0.0.1366.742" timestamp="1587837364622" />
+    <state width="1300" height="163" key="GridCell.Tab.0.right" timestamp="1587837364624">
+      <screen x="0" y="0" width="1366" height="742" />
+    </state>
+    <state width="1300" height="163" key="GridCell.Tab.0.right/0.0.1366.742@0.0.1366.742" timestamp="1587837364624" />
   </component>
 </project>
