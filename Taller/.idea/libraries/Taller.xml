@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Taller">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Taller.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

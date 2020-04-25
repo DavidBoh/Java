@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Determinante">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/Determinante.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
