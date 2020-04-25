@@ -4,7 +4,16 @@
     <list default="true" id="de75f57a-c521-4c7f-b7bf-24a2a843753f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../GUIJava/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIJava/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/../Menus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Menus/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parcial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parcial/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parcial2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parcial2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SQLstuff/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SQLstuff/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaludPensionMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SaludPensionMVC/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 8ab776db0e62f87ffdd232db70f6cf1fe0a77511
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< HEAD
   </component>
   <component name="RunManager">
     <configuration name="GUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -37,6 +47,9 @@
         <item itemvalue="Application.GUI" />
       </list>
     </recent_temporary>
+=======
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+>>>>>>> 8ab776db0e62f87ffdd232db70f6cf1fe0a77511
   </component>
   <component name="SvnConfiguration">
     <configuration />

@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="020a8ff4-6c79-4db1-a78d-438a0c4e02d4" name="Default Changelist" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoginGUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoginGUI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Menus/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Menus/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parcial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parcial/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parcial2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parcial2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SQLstuff/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SQLstuff/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaludPensionMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SaludPensionMVC/.idea/workspace.xml" afterDir="false" />
+>>>>>>> 8ab776db0e62f87ffdd232db70f6cf1fe0a77511
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +32,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="GUIJava" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
