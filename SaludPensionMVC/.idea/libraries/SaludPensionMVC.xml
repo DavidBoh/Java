@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="SaludPensionMVC">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/dist/SaludPensionMVC.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
