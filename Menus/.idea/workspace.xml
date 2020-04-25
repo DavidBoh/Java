@@ -1,20 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c8c8bcf2-3211-4bbb-a888-5f5fd9e4b821" name="Default Changelist" comment="" />
+    <list default="true" id="c8c8bcf2-3211-4bbb-a888-5f5fd9e4b821" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../GUIJava/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../GUIJava/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LoginGUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LoginGUI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OtrosGUI/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parcial/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parcial/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Parcial2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Parcial2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SQLstuff/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SQLstuff/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SaludPensionMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SaludPensionMVC/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1azs9M5KuGvVPEQNrHRZ8XXisa6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="Menus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -35,18 +48,6 @@
         <item itemvalue="Application.Menus" />
       </list>
     </recent_temporary>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
