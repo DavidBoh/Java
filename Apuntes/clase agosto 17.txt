@@ -1,0 +1,37 @@
+GUI
+Graphics user interface
+
+Java.awe->applets->almost.obsolete
+
+java.swing->desktop
+import javax.swing.*;
+
+antes de crear app
+
+1. Requerimientos
+2. Analisis
+3. Diseño
+4. Codificacion
+5. Pruebas
+
+Jlabel: texto sin interaccion, instrucciones, etc
+Jtextfield: campo de ingreso de txt
+Jbutton: boton
+
+layout: sistema o forma de distrubicion de elementos graficos dentro de la ventana
+cuatro tipos:
+1. FlowLayout: (requiere import java.awt.*;) layout de flujo. Da un tamaño por defecto. Hay que tener en cuenta tamaños, al agrandar ventana
+se desajusta. 
+2. GridLayout(f,c): crea grids. Redimensiona elementos. 
+3. BorderLayout: Crea zonas, north, south, east west, center
+4. null: no existe sistema predefinido de ordn, como lienzo en blanco.se debe usar ej: funcion setBounds(100,100,50,20)
+
+setDefaultCloseOperation(EXIT_ON_CLOSE);
+cerrar del todo el programa
+TAREA:
+
+COMPLETAR EL CODIGO CON  MAS FUNCIONES
+
+RAIZ CUADRADA
+PORCENTAJE no MODULO
+ELEVAR UNO A LA POTENCIA DEL OTRO

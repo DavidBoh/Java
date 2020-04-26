@@ -1,0 +1,20 @@
+calcular cotizacion pension 
+1200 semanas
+
+ partir de fecha
+
+mayor de edad desde=
+
+años, dias, meses, cuantas semanas?
+50 semanas laborales al año. 
+
+%
+
+salidas:
+
+debe pagar en salud: $
+pension debe pegar: $
+semanas cotizadas: $
+
+comprimir zip o rar.
+

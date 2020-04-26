@@ -1,0 +1,8 @@
+Nombre: sf
+Apellido: sfdsf
+Edad: 1
+Género: Masculino
+Estrato: 6
+Tipo de Vivienda: Otro
+Dirección: sfd
+Teléfono: fsd

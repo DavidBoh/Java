@@ -1,0 +1,8 @@
+Nombre: Dav
+Apellido: Boh
+Edad: 1
+Género: Masculino
+Estrato: 4
+Tipo de Vivienda: Familiar
+Dirección: dasdas
+Teléfono: 12121

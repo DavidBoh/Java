@@ -1,0 +1,6 @@
+Marca: Samsung
+IMEI: 123
+Modelo(año): 2009
+Estado: Nuevo
+Color: Gris
+Importado por: Saaa
