@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="CuboDinamico">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/dist/CuboDinamico.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>

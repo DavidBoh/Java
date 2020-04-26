@@ -1,5 +1,0 @@
-Marca: Samsung
-Modelo(año): 2015
-Estado: Nuevo
-Color: Gris
-Importado por: Samsung

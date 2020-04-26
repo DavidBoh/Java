@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Paneles">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/dist/Paneles.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
