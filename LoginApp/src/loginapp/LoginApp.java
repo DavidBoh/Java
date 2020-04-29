@@ -7,6 +7,12 @@ package loginapp;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -74,7 +80,37 @@ public class LoginApp implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         //System.out.println("Button Clicked");
 
+        PreparedStatement st;
+        ResultSet rs;
 
+        String username = userText.getText();
+        String password = String.valueOf(passwordText.getPassword());
+
+        String query = "SELECT * FROM `usuarios` WHERE `username` = ? AND `password` = ?";
+
+        try {
+            
+            st = login_connection.getConnection().prepareStatement(query);
+
+            st.setString(1, username);
+            st.setString(2, password);
+
+            rs = st.executeQuery();
+            
+            if(rs.next())
+            {
+                // 1:42
+            }else{
+                
+            }
+
+        } catch (SQLException ex){
+            Logger.getLogger(LoginApp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+
+
+        /*
         String user = userText.getText();
         char[] password = passwordText.getPassword();
         String passwordString = new String(password); //convirtiendo la variable vector char a String
@@ -82,6 +118,9 @@ public class LoginApp implements ActionListener {
         if(user.equals("Alex") && passwordString.equals("jaja")) {
             success.setText("Success");
         }
+        */
+        
+        
     }
     
 }

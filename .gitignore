@@ -12,3 +12,4 @@ MANIFEST.MF
 RemoteSystemsTempFiles
 bin
 /LoginApp/build/
+/Login_With_DB/nbproject/private/
