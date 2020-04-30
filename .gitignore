@@ -9,6 +9,7 @@ MANIFEST.MF
 .idea
 *.iml
 *.jar
+*.xml
 RemoteSystemsTempFiles
 bin
 /LoginApp/build/
