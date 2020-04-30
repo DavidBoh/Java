@@ -13,3 +13,5 @@ RemoteSystemsTempFiles
 bin
 /LoginApp/build/
 /Login_With_DB/nbproject/private/
+/TestGUI/nbproject/private/
+/TestGUI/build/

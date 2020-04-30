@@ -16,6 +16,7 @@ import java.util.logging.Logger;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
@@ -35,10 +36,10 @@ public class LoginApp implements ActionListener {
     private static JLabel success;
     
 
-    public static void main(String[] args) {
+    public static void main(final String[] args) {
 
-        JPanel panel = new JPanel();
-        JFrame frame = new JFrame();
+        final JPanel panel = new JPanel();
+        final JFrame frame = new JFrame();
         frame.setSize(350,350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
@@ -77,16 +78,16 @@ public class LoginApp implements ActionListener {
 
    
     @Override
-    public void actionPerformed(ActionEvent e) {
-        //System.out.println("Button Clicked");
+    public void actionPerformed(final ActionEvent e) {
+        System.out.println("Button Clicked");
 
         PreparedStatement st;
         ResultSet rs;
 
-        String username = userText.getText();
-        String password = String.valueOf(passwordText.getPassword());
+        final String username = userText.getText();
+        final String password = String.valueOf(passwordText.getPassword());
 
-        String query = "SELECT * FROM `usuarios` WHERE `username` = ? AND `password` = ?";
+        final String query = "SELECT * FROM `usuarios` WHERE `username` = ? AND `password` = ?";
 
         try {
             
@@ -96,31 +97,34 @@ public class LoginApp implements ActionListener {
             st.setString(2, password);
 
             rs = st.executeQuery();
-            
+            /* *************************
+            String user = userText.getText();
+            char[] passwordx = passwordText.getPassword();
+            String passwordString = new String(passwordx); //convirtiendo la variable vector char a String
+
+            if(user.equals("test") && passwordString.equals("123")) {
+            success.setText("Success");
+            }
+            */ 
             if(rs.next())
             {
-                // 1:42
-            }else{
+                //success ex = new success();
+                System.out.println("conexion exitosa");
+                //ex.setVisible(true);
+                //ex.pack();
+                //ex.setLocationRelativeTo(null);
                 
+                
+            }else{
+                JOptionPane.showMessageDialog(null, "Usuario o contraseña invalidos","Error login",2);
             }
 
-        } catch (SQLException ex){
+        } catch (final SQLException ex){
             Logger.getLogger(LoginApp.class.getName()).log(Level.SEVERE, null, ex);
         }
-        
-
-
-        /*
-        String user = userText.getText();
-        char[] password = passwordText.getPassword();
-        String passwordString = new String(password); //convirtiendo la variable vector char a String
-
-        if(user.equals("Alex") && passwordString.equals("jaja")) {
-            success.setText("Success");
-        }
-        */
-        
-        
+               
     }
+
+    
     
 }

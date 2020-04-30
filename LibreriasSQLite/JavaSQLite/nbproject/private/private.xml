@@ -3,8 +3,12 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/ESTUDIANTE/Desktop/LibreriasSQLite/JavaSQLite/src/javasqlite/BaseDatos.java</file>
-            <file>file:/C:/Users/ESTUDIANTE/Desktop/LibreriasSQLite/JavaSQLite/src/javasqlite/Inicio.java</file>
+            <file>file:/home/herrboh/Developer/Java/LibreriasSQLite/JavaSQLite/src/javasqlite/JavaSQLite.java</file>
+            <file>file:/home/herrboh/Developer/Java/LibreriasSQLite/JavaSQLite/src/javasqlite/BaseDatos.java</file>
+            <file>file:/home/herrboh/Developer/Java/LibreriasSQLite/JavaSQLite/src/javasqlite/NuevoAlumno.java</file>
+            <file>file:/home/herrboh/Developer/Java/LibreriasSQLite/JavaSQLite/src/javasqlite/BuscarAlumno.java</file>
+            <file>file:/home/herrboh/Developer/Java/LibreriasSQLite/JavaSQLite/src/javasqlite/Inicio.java</file>
+            <file>file:/home/herrboh/Developer/Java/LibreriasSQLite/JavaSQLite/src/javasqlite/Menu.java</file>
         </group>
     </open-files>
 </project-private>

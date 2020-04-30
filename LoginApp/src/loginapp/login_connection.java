@@ -5,8 +5,9 @@
  */
 package loginapp;
 
-import com.mysql.jdbc.Connection;
+//import com.mysql.jdbc.Connection;
 import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
+import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -19,9 +20,9 @@ public class login_connection {
     
     private static String servername = "localhost";
     private static String username = "root";
-    private static String dbname = "usuarios";
+    private static String dbname = "usuarios_db";
     private static Integer portnumber = 3306;
-    private static String password = "";
+    private static String password = "ph/axo>vJe;789";
     
     
     public static Connection getConnection()
@@ -37,7 +38,7 @@ public class login_connection {
         datasource.setPortNumber(portnumber);    
         
         try {
-            cnx = (Connection) datasource.getConnection();
+            cnx = datasource.getConnection();
         } catch (SQLException ex) {
             Logger.getLogger(" Get Connection -> " + login_connection.class.getName()).log(Level.SEVERE, null, ex);
         }
