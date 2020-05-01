@@ -26,11 +26,12 @@ public class success {
         framex.setSize(350,350);
         framex.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         framex.add(panelx);
+        framex.setLocationRelativeTo(null);
 
         panelx.setLayout(null);
 
         labelx = new JLabel("Inicio exitoso!");
-        labelx.setBounds(10,20,80,25);
+        labelx.setBounds(80,150,200,25);
         panelx.add(labelx);
         
         framex.setVisible(true);

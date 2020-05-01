@@ -65,7 +65,7 @@ public class AlfaNum implements ActionListener {
 
         final JFrame framex1 = new JFrame();
         final JPanel panelx1 = new JPanel();
-        framex1.setSize(750,350);
+        framex1.setSize(750,250);
         framex1.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         panelx1.setLayout(null); //permite modificar posicionamiento de botones
         framex1.setLocationRelativeTo(null);
@@ -74,7 +74,7 @@ public class AlfaNum implements ActionListener {
         buttonx1 = new JButton("1");
         buttonx1.setBounds(335,10,42,30);
         panelx1.add(buttonx1);
-        buttonx1.addActionListener(new AlfaNum());
+        
         
         buttonx2 = new JButton("2");
         buttonx2.setBounds(380,10,42,30);
@@ -84,9 +84,10 @@ public class AlfaNum implements ActionListener {
         buttonx3.setBounds(425,10,42,30);
         panelx1.add(buttonx3);
         
+        //
+        
         buttonx4 = new JButton("4");
         buttonx4.setBounds(335,45,42,30);
-        buttonx4.addActionListener(new AlfaNum());
         panelx1.add(buttonx4);
 
         buttonx5 = new JButton("5");
@@ -97,9 +98,10 @@ public class AlfaNum implements ActionListener {
         buttonx6.setBounds(425,45,42,30);
         panelx1.add(buttonx6);
         
+        //
+        
         buttonx7 = new JButton("7");
         buttonx7.setBounds(335,80,42,30);
-        buttonx7.addActionListener(new AlfaNum());
         panelx1.add(buttonx7);
 
         buttonx8 = new JButton("8");
@@ -109,6 +111,8 @@ public class AlfaNum implements ActionListener {
         buttonx9 = new JButton("9");
         buttonx9.setBounds(425,80,42,30);
         panelx1.add(buttonx9);
+        
+        //
         
         buttonxok = new JButton("✓");
         buttonxok.setBounds(425,115,44,30);
@@ -143,7 +147,6 @@ public class AlfaNum implements ActionListener {
         
         buttonxD = new JButton("d");
         buttonxD.setBounds(145,10,44,30);
-        buttonxD.addActionListener(new AlfaNum());
         panelx1.add(buttonxD);
 
         buttonxE = new JButton("e");
@@ -156,7 +159,6 @@ public class AlfaNum implements ActionListener {
         
         buttonxG = new JButton("g");
         buttonxG.setBounds(280,10,44,30);
-        buttonxG.addActionListener(new AlfaNum());
         panelx1.add(buttonxG);
         
         //
@@ -176,7 +178,6 @@ public class AlfaNum implements ActionListener {
         
         buttonxK = new JButton("k");
         buttonxK.setBounds(145,45,44,30);
-        buttonxK.addActionListener(new AlfaNum());
         panelx1.add(buttonxK);
 
         buttonxL = new JButton("l");
@@ -189,7 +190,6 @@ public class AlfaNum implements ActionListener {
         
         buttonxN = new JButton("n");
         buttonxN.setBounds(285,45,44,30);
-        buttonxN.addActionListener(new AlfaNum());
         panelx1.add(buttonxN);
         
         //
@@ -197,7 +197,7 @@ public class AlfaNum implements ActionListener {
         buttonxO = new JButton("o");
         buttonxO.setBounds(10,80,44,30);
         panelx1.add(buttonxO);
-        buttonxO.addActionListener(new AlfaNum());
+        
         
         buttonxP = new JButton("p");
         buttonxP.setBounds(55,80,44,30);
@@ -209,7 +209,6 @@ public class AlfaNum implements ActionListener {
         
         buttonxR = new JButton("r");
         buttonxR.setBounds(145,80,44,30);
-        buttonxR.addActionListener(new AlfaNum());
         panelx1.add(buttonxR);
 
         buttonxS = new JButton("s");
@@ -222,7 +221,6 @@ public class AlfaNum implements ActionListener {
         
         buttonxU = new JButton("u");
         buttonxU.setBounds(285,80,44,30);
-        buttonxU.addActionListener(new AlfaNum());
         panelx1.add(buttonxU);
         
         //
@@ -237,7 +235,6 @@ public class AlfaNum implements ActionListener {
         
         buttonxX = new JButton("x");
         buttonxX.setBounds(145,115,44,30);
-        buttonxX.addActionListener(new AlfaNum());
         panelx1.add(buttonxX);
 
         buttonxY = new JButton("y");
