@@ -18,7 +18,7 @@ public class success {
     private static JFrame framex;
     private static JPanel panelx;
 
-    public static void main(String[] args){
+    success(){
 
         JPanel panelx = new JPanel();
         JFrame framex = new JFrame();

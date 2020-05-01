@@ -28,49 +28,49 @@ import javax.swing.JTextField;
 
 public class LoginApp implements ActionListener {
 
-    private static JLabel label ;
+    private static JLabel label;
     private static JTextField userText;
     private static JLabel passwordLabel;
     private static JPasswordField passwordText;
     private static JButton button;
-    private static JLabel success;
+    
     
 
     public static void main(final String[] args) {
 
         final JPanel panel = new JPanel();
         final JFrame frame = new JFrame();
-        frame.setSize(350,350);
+        frame.setSize(750,350);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         
         frame.add(panel);
-
+        frame.setLocationRelativeTo(null);
+        
         panel.setLayout(null);
-
-        label = new JLabel("User");
-        label.setBounds(10,20,80,25);
+        
+        label = new JLabel("Usuario");
+        label.setBounds(610,10,80,25);
         panel.add(label);
 
         userText = new JTextField(20);
-        userText.setBounds(100,20,165,25);
+        userText.setBounds(560,40,165,25);
         panel.add(userText);
         
-        passwordLabel = new JLabel("Password");
-        passwordLabel.setBounds(10,50,80,25);
+        passwordLabel = new JLabel("Contraseña");
+        passwordLabel.setBounds(600,60,120,25);
         panel.add(passwordLabel);    
 
-        passwordText = new JPasswordField();
-        passwordText.setBounds(100,50,165,25);
+        passwordText = new JPasswordField("********");
+        passwordText.setBounds(560,85,165,25);
         panel.add(passwordText);
+        passwordText.setEnabled(false);
 
         button = new JButton("Enviar");
-        button.setBounds(10,80,80,25);
+        button.setBounds(600,120,80,25);
         button.addActionListener(new LoginApp());
         panel.add(button);
 
-        success = new JLabel("");
-        success.setBounds(10, 110, 300, 25);
-        panel.add(success);
+        
 
         frame.setVisible(true);
         
@@ -110,6 +110,7 @@ public class LoginApp implements ActionListener {
             {
                 //success ex = new success();
                 System.out.println("conexion exitosa");
+                new success();
                 //ex.setVisible(true);
                 //ex.pack();
                 //ex.setLocationRelativeTo(null);
