@@ -193,8 +193,7 @@ public class LoginApp implements ActionListener {
         buttonxA.setBounds(30,30,44,30);
         panel.add(buttonxA);
         buttonxA.addActionListener(new LoginApp());
-        buttonxA.addActionListener(new LoginApp());
-        
+                
         
         buttonxB = new JButton("b");
         buttonxB.setBounds(75,30,44,30);
@@ -341,7 +340,7 @@ public class LoginApp implements ActionListener {
     public void actionPerformed(final ActionEvent e) {
         
         if(e.getSource()==buttonxA){
-            passwordText.setText(userText.getText() + "a");
+            passwordText.setText(passwordText.getText() + "a");
         }
         if(e.getSource()==buttonxB){
             
