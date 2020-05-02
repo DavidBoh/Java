@@ -315,23 +315,28 @@ public class LoginApp implements ActionListener {
         buttonxW.addActionListener(new LoginApp());
         
         buttonxX = new JButton("x");
-        buttonxX.setBounds(165,135,44,30);
+        buttonxX.setBounds(170,135,44,30);
         panel.add(buttonxX);
         buttonxX.addActionListener(new LoginApp());
 
         buttonxY = new JButton("y");
-        buttonxY.setBounds(210,135,44,30);
+        buttonxY.setBounds(216,135,44,30);
         panel.add(buttonxY);
         buttonxY.addActionListener(new LoginApp());
         
         buttonxZ = new JButton("z");
-        buttonxZ.setBounds(255,135,46,30);
+        buttonxZ.setBounds(262,135,46,30);
         buttonxZ.addActionListener(new LoginApp());
         panel.add(buttonxZ);
 
         // fin matriz numerica
-
+        panel.setBackground(Color.decode("#0085CA"));
+        
         frame.setVisible(true);
+        
+        
+        
+        
         
     }
 
