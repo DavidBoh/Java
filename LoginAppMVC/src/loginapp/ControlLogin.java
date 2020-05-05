@@ -245,7 +245,6 @@ public class ControlLogin implements ActionListener {
 
             final String username = v.userText.getText();
             final String password = String.valueOf(v.passwordText.getPassword());
-
             final String query = "SELECT * FROM `usuarios` WHERE `username` = ? AND `password` = ?";
 
             try {
@@ -261,9 +260,7 @@ public class ControlLogin implements ActionListener {
                 {
                      // aqui va el llamado a la ventana principal
                      System.out.println("conexion exitosa");
-                     
-                
-                
+                                    
                 }else{
                     JOptionPane.showMessageDialog(null, "Usuario o contraseña invalidos","Error login",2);
                 }

@@ -16,8 +16,7 @@ public class LoginAppMVC {
         VistaLogin v1= new VistaLogin();
         ModeloLogin m1= new ModeloLogin();
         ControlLogin c1= new ControlLogin(m1,v1);
-    
-        
+           
     }
     
 }
