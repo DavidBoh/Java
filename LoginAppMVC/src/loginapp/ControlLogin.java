@@ -1,0 +1,324 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package loginapp;
+
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import javax.swing.JOptionPane;
+
+/**
+ *
+ * @author herrboh
+ */
+public class ControlLogin implements ActionListener {
+    
+    VistaLogin v;
+    ModeloLogin m;
+    
+    ControlLogin(ModeloLogin mod, VistaLogin vis){
+        v=vis;
+        m=mod;
+              
+        v.buttonx1.addActionListener(this);
+        v.buttonx2.addActionListener(this);
+        v.buttonx3.addActionListener(this);
+        v.buttonx4.addActionListener(this);
+        v.buttonx5.addActionListener(this);
+        v.buttonx6.addActionListener(this);
+        v.buttonx7.addActionListener(this);
+        v.buttonx8.addActionListener(this);
+        v.buttonx9.addActionListener(this);
+        v.buttonx0.addActionListener(this);
+        
+        v.buttonxok.addActionListener(this);
+        v.buttonxcancel.addActionListener(this);
+        v.button.addActionListener(this);
+        
+        v.buttonxA.addActionListener(this);
+        v.buttonxB.addActionListener(this);
+        v.buttonxC.addActionListener(this);
+        v.buttonxD.addActionListener(this);
+        v.buttonxE.addActionListener(this);
+        v.buttonxF.addActionListener(this);
+        v.buttonxG.addActionListener(this);
+        v.buttonxH.addActionListener(this);
+        v.buttonxI.addActionListener(this);
+        v.buttonxJ.addActionListener(this);        
+        v.buttonxK.addActionListener(this);
+        v.buttonxL.addActionListener(this);
+        v.buttonxM.addActionListener(this);
+        v.buttonxN.addActionListener(this);
+        v.buttonxO.addActionListener(this);
+        v.buttonxP.addActionListener(this);
+        v.buttonxQ.addActionListener(this);
+        v.buttonxR.addActionListener(this);
+        v.buttonxS.addActionListener(this);
+        v.buttonxT.addActionListener(this);
+        v.buttonxU.addActionListener(this);
+        v.buttonxV.addActionListener(this);
+        v.buttonxW.addActionListener(this);
+        v.buttonxX.addActionListener(this);
+        v.buttonxY.addActionListener(this);
+        v.buttonxZ.addActionListener(this);
+        
+        
+      
+        
+        v.setVisible(true);
+        v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
+        
+    }
+    
+    
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+        System.out.println("Button Clicked");
+        
+        if(e.getSource()==v.buttonxA){
+            v.passwordText.setText(v.passwordText.getText() + "a");
+        }
+         
+        if(e.getSource()==v.buttonxB){
+            
+            v.passwordText.setText(v.passwordText.getText() + "b");
+        }
+        if(e.getSource()==v.buttonxC){
+            
+            v.passwordText.setText(v.passwordText.getText() + "c");
+        }
+        if(e.getSource()==v.buttonxD){
+            
+            v.passwordText.setText(v.passwordText.getText() + "d");
+        }
+        if(e.getSource()==v.buttonxE){
+            
+            v.passwordText.setText(v.passwordText.getText() + "e");
+        }
+        if(e.getSource()==v.buttonxF){
+            
+            v.passwordText.setText(v.passwordText.getText() + "f");
+        }
+        if(e.getSource()==v.buttonxG){
+            
+            v.passwordText.setText(v.passwordText.getText() + "g");
+        }
+        if(e.getSource()==v.buttonxH){
+            
+            v.passwordText.setText(v.passwordText.getText() + "h");
+        }
+        if(e.getSource()==v.buttonxI){
+            
+            v.passwordText.setText(v.passwordText.getText() + "i");
+        }
+        if(e.getSource()==v.buttonxJ){
+            
+            v.passwordText.setText(v.passwordText.getText() + "j");
+        }
+        if(e.getSource()==v.buttonxK){
+            
+            v.passwordText.setText(v.passwordText.getText() + "k");
+        }
+        if(e.getSource()==v.buttonxL){
+            
+            v.passwordText.setText(v.passwordText.getText() + "l");
+        }
+        if(e.getSource()==v.buttonxM){
+            
+            v.passwordText.setText(v.passwordText.getText() + "m");
+        }
+        if(e.getSource()==v.buttonxN){
+            
+            v.passwordText.setText(v.passwordText.getText() + "n");
+        }
+        if(e.getSource()==v.buttonxÑ){
+            
+            v.passwordText.setText(v.passwordText.getText() + "ñ");
+        }
+        if(e.getSource()==v.buttonxO){
+            
+            v.passwordText.setText(v.passwordText.getText() + "o");
+        }
+        if(e.getSource()==v.buttonxP){
+            
+            v.passwordText.setText(v.passwordText.getText() + "p");
+        }
+        if(e.getSource()==v.buttonxQ){
+            
+            v.passwordText.setText(v.passwordText.getText() + "q");
+        }
+        if(e.getSource()==v.buttonxR){
+            
+            v.passwordText.setText(v.passwordText.getText() + "r");
+        }
+        if(e.getSource()==v.buttonxS){
+            
+            v.passwordText.setText(v.passwordText.getText() + "s");
+        }
+        if(e.getSource()==v.buttonxT){
+            
+            v.passwordText.setText(v.passwordText.getText() + "t");
+        }
+        if(e.getSource()==v.buttonxU){
+            
+            v.passwordText.setText(v.passwordText.getText() + "u");
+        }
+        if(e.getSource()==v.buttonxV){
+            
+            v.passwordText.setText(v.passwordText.getText() + "v");
+        }
+        if(e.getSource()==v.buttonxW){
+            
+            v.passwordText.setText(v.passwordText.getText() + "w");
+        }
+        if(e.getSource()==v.buttonxX){
+            
+            v.passwordText.setText(v.passwordText.getText() + "x");
+        }
+        if(e.getSource()==v.buttonxY){
+            
+            v.passwordText.setText(v.passwordText.getText() + "y");
+        }
+        if(e.getSource()==v.buttonxZ){
+            
+            v.passwordText.setText(v.passwordText.getText() + "y");
+        }
+        
+        if(e.getSource()==v.buttonx1){
+            v.passwordText.setText(v.passwordText.getText() + "1");
+        }
+        
+        if(e.getSource()==v.buttonx2){
+            v.passwordText.setText(v.passwordText.getText() + "2");
+        }
+        
+        if(e.getSource()==v.buttonx3){
+            v.passwordText.setText(v.passwordText.getText() + "3");
+        }
+        
+        if(e.getSource()==v.buttonx4){
+            v.passwordText.setText(v.passwordText.getText() + "4");
+        }
+        
+        if(e.getSource()==v.buttonx5){
+            v.passwordText.setText(v.passwordText.getText() + "5");
+        }
+        
+        if(e.getSource()==v.buttonx6){
+            v.passwordText.setText(v.passwordText.getText() + "6");
+        }
+        
+        if(e.getSource()==v.buttonx7){
+            v.passwordText.setText(v.passwordText.getText() + "7");
+        }
+        
+        if(e.getSource()==v.buttonx8){
+            v.passwordText.setText(v.passwordText.getText() + "8");
+        }
+        
+        if(e.getSource()==v.buttonx9){
+            v.passwordText.setText(v.passwordText.getText() + "9");
+        }
+        
+        if(e.getSource()==v.buttonx0){
+            v.passwordText.setText(v.passwordText.getText() + "0");
+        }
+        
+        if(e.getSource()==v.buttonxcancel){
+            v.passwordText.setText(null);
+        }
+        
+        if(e.getSource()==v.buttonxok){
+        
+            PreparedStatement st;
+            ResultSet rs;
+
+            final String username = v.userText.getText();
+            final String password = String.valueOf(v.passwordText.getPassword());
+
+            final String query = "SELECT * FROM `usuarios` WHERE `username` = ? AND `password` = ?";
+
+            try {
+            
+                st = ModeloLogin.getConnection().prepareStatement(query);
+
+                st.setString(1, username);
+                st.setString(2, password);
+
+                rs = st.executeQuery();
+            
+                if(rs.next())
+                {
+                     //success ex = new success();
+                     System.out.println("conexion exitosa");
+                     //new success();
+                    //LoginApp frame = new LoginApp();
+                    //frame.setVisible(false);
+                
+                
+                }else{
+                    JOptionPane.showMessageDialog(null, "Usuario o contraseña invalidos","Error login",2);
+                }
+
+            } catch (final SQLException ex){
+                Logger.getLogger(LoginAppMVC.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+        
+        
+        /*
+        
+        
+        
+
+        //if(e.getSource()==button){
+        PreparedStatement st;
+        ResultSet rs;
+
+        //final String username = userText.getText();
+        //final String password = String.valueOf(passwordText.getPassword());
+
+        final String query = "SELECT * FROM `usuarios` WHERE `username` = ? AND `password` = ?";
+
+        try {
+            
+            //st = login_connection.getConnection().prepareStatement(query);
+
+            st.setString(1, username);
+            st.setString(2, password);
+
+            rs = st.executeQuery();
+            
+            if(rs.next())
+            {
+                
+                System.out.println("conexion exitosa");
+                
+                
+                
+            }else{
+                JOptionPane.showMessageDialog(null, "Usuario o contraseña invalidos","Error login",2);
+            }
+
+        } catch (final SQLException ex){
+            //Logger.getLogger(LoginApp.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       }
+               
+    }
+*/
+        
+    }
+    
+    
+}

@@ -15,6 +15,7 @@ public class VistaCalc extends JFrame {
     
     
     VistaCalc(){
+        
         setSize(400,300);
         setTitle("CalculadoraMCV");
         setLayout(null);

@@ -26,3 +26,11 @@ bin
 /testing/dist/
 /Testing/nbproject/private/
 /Testing/build/
+/Testing/dist/
+/LoginAppShuffle/nbproject/private/
+/LoginAppShuffle/build/
+/LoginAppShuffle/dist/
+/LoginAppRandom/nbproject/private/
+/LoginAppRandom/build/
+/LoginAppMVC/nbproject/private/
+/LoginAppMVC/build/
