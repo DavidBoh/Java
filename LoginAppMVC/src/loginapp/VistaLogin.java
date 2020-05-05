@@ -7,6 +7,7 @@ package loginapp;
 
 
 import java.awt.Color;
+import java.awt.Font;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -63,13 +64,14 @@ public class VistaLogin extends JFrame{
     public JButton buttonxY;
     public JButton buttonxZ;
     public JButton buttonxQ;
+    public JButton recuperar;
 
     VistaLogin(){
         
         setSize(750,250);
         setTitle("Inicio de Sesión");
         setLayout(null);
-        setBackground(Color.decode("#0085CA"));
+        getContentPane().setBackground(Color.decode("#0085CA"));
         setLocationRelativeTo(null);
         
         label = new JLabel("Usuario");
@@ -90,6 +92,7 @@ public class VistaLogin extends JFrame{
         buttonxok = new JButton("✓");
         buttonx0 = new JButton("0");
         buttonxcancel = new JButton("x");
+        recuperar = new JButton("Olvidé mi contraseña");
         
         buttonxA = new JButton("a");         
         buttonxB = new JButton("b");
@@ -123,6 +126,7 @@ public class VistaLogin extends JFrame{
         passwordLabel.setBounds(590,71,120,25);
         passwordText.setBounds(550,95,165,25);
         button.setBounds(590,130,80,25);
+        recuperar.setBounds(570,170,120,25);
         
         buttonx1.setBounds(375,30,42,30);
         buttonx2.setBounds(420,30,42,30);
@@ -169,6 +173,7 @@ public class VistaLogin extends JFrame{
         this.add(passwordLabel);
         this.add(passwordText);
         this.add(button);
+        this.add(recuperar);
         
         this.add(buttonx1);
         this.add(buttonx2);
@@ -211,6 +216,8 @@ public class VistaLogin extends JFrame{
         this.add(buttonxZ);
         
         passwordText.setEnabled(false);
+        
+        recuperar.setFont(new Font("Arial", Font.PLAIN, 8));
         
         buttonxok.setBackground(Color.GREEN);
         buttonxok.setOpaque(true);

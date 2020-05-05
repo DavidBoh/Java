@@ -42,6 +42,7 @@ public class ControlLogin implements ActionListener {
         v.buttonxok.addActionListener(this);
         v.buttonxcancel.addActionListener(this);
         v.button.addActionListener(this);
+        v.recuperar.addActionListener(this);
         
         v.buttonxA.addActionListener(this);
         v.buttonxB.addActionListener(this);
@@ -69,9 +70,6 @@ public class ControlLogin implements ActionListener {
         v.buttonxX.addActionListener(this);
         v.buttonxY.addActionListener(this);
         v.buttonxZ.addActionListener(this);
-        
-        
-      
         
         v.setVisible(true);
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
