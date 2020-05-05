@@ -238,7 +238,7 @@ public class ControlLogin implements ActionListener {
             v.passwordText.setText(null);
         }
         
-        if(e.getSource()==v.buttonxok){
+        if(e.getSource() == v.buttonxok || e.getSource() == v.button){
         
             PreparedStatement st;
             ResultSet rs;
@@ -259,11 +259,9 @@ public class ControlLogin implements ActionListener {
             
                 if(rs.next())
                 {
-                     //success ex = new success();
+                     // aqui va el llamado a la ventana principal
                      System.out.println("conexion exitosa");
-                     //new success();
-                    //LoginApp frame = new LoginApp();
-                    //frame.setVisible(false);
+                     
                 
                 
                 }else{
@@ -275,50 +273,11 @@ public class ControlLogin implements ActionListener {
             }
         }
         
-        
-        /*
-        
-        
-        
-
-        //if(e.getSource()==button){
-        PreparedStatement st;
-        ResultSet rs;
-
-        //final String username = userText.getText();
-        //final String password = String.valueOf(passwordText.getPassword());
-
-        final String query = "SELECT * FROM `usuarios` WHERE `username` = ? AND `password` = ?";
-
-        try {
-            
-            //st = login_connection.getConnection().prepareStatement(query);
-
-            st.setString(1, username);
-            st.setString(2, password);
-
-            rs = st.executeQuery();
-            
-            if(rs.next())
-            {
-                
-                System.out.println("conexion exitosa");
-                
-                
-                
-            }else{
-                JOptionPane.showMessageDialog(null, "Usuario o contraseña invalidos","Error login",2);
-            }
-
-        } catch (final SQLException ex){
-            //Logger.getLogger(LoginApp.class.getName()).log(Level.SEVERE, null, ex);
-        }
-       }
-               
     }
-*/
-        
-    }
-    
     
 }
+    
+   
+    
+    
+
