@@ -7,12 +7,17 @@ package loginapp;
 
 
 import java.awt.Color;
+import java.awt.Cursor;
 import java.awt.Font;
+import static java.awt.Frame.HAND_CURSOR;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPasswordField;
+
 import javax.swing.JTextField;
+import text.TextPrompt;
 
 /**
  *
@@ -20,11 +25,14 @@ import javax.swing.JTextField;
  */
 public class VistaLogin extends JFrame{
     
-    static JLabel label;
-    public JTextField userText;
-    public JLabel passwordLabel;
-    public JPasswordField passwordText;
-    public JButton button;
+  
+    public JTextField userText, tIdentificacion;
+
+    
+    public JPasswordField pContra;
+    
+    private TextPrompt identificacion, contraseña;
+    
     public JButton buttonx1;
     public JButton buttonx2;
     public JButton buttonx3;
@@ -64,22 +72,64 @@ public class VistaLogin extends JFrame{
     public JButton buttonxY;
     public JButton buttonxZ;
     public JButton buttonxQ;
-    public JButton recuperar;
+   
+    
+    public JButton botonCerrar;
+    private Color colorFuente, tFondo;
+    private JLabel fondo;
 
-    VistaLogin(){
+    public VistaLogin(){
         
-        setSize(750,250);
-        setTitle("Inicio de Sesión");
-        setLayout(null);
-        getContentPane().setBackground(Color.decode("#0085CA"));
+        setSize(310,546);
+        setUndecorated(true);
+        iniciar();
+        localizar();
+        agregar();       
         setLocationRelativeTo(null);
+        setResizable(false);
+        setVisible(true);
+        setDefaultCloseOperation(3);
+            
+    }
         
-        label = new JLabel("Usuario");
+    private void iniciar(){
+        
+        colorFuente = new Color(255, 255, 255);
+        tFondo = new Color(0, 123, 164);
+    
+        fondo = new JLabel();
+        fondo.setOpaque(true);
+        fondo.setIcon(new ImageIcon(getClass().getResource("/Imagenes/LOGIN.jpg")));
+        fondo.setBackground(new Color(72, 181, 232));
+        
         userText = new JTextField(20);
-        passwordLabel = new JLabel("Contraseña");
-        passwordText = new JPasswordField("");
-        button = new JButton("Enviar");
+  
+        tIdentificacion = new JTextField();
+        tIdentificacion.setBackground(tFondo);
+        tIdentificacion.setOpaque(false);
+        tIdentificacion.setBorder(null);
+        tIdentificacion.setForeground(colorFuente);
+        identificacion = new TextPrompt("Identificación", tIdentificacion); 
         
+        
+        pContra = new JPasswordField();
+        pContra.setBackground(tFondo);
+        pContra.setOpaque(false);
+        pContra.setBorder(null);
+        contraseña = new TextPrompt("Contraseña", pContra);
+        //pContra.setFocusable(false);
+        //pContra.setEnabled(true);
+        //pContra.setClickable(true);
+        
+        
+        
+        botonCerrar = new JButton(new ImageIcon(getClass().getResource("/Imagenes/cerrar.png")));
+        botonCerrar.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/cerrar_g.png")));
+        botonCerrar.setContentAreaFilled(false);
+        botonCerrar.setBorder(null);
+        botonCerrar.setCursor(new Cursor(HAND_CURSOR));
+        
+  
         buttonx1 = new JButton("1");
         buttonx2 = new JButton("2");
         buttonx3 = new JButton("3");
@@ -92,7 +142,7 @@ public class VistaLogin extends JFrame{
         buttonxok = new JButton("✓");
         buttonx0 = new JButton("0");
         buttonxcancel = new JButton("x");
-        recuperar = new JButton("Olvidé mi contraseña");
+       
         
         buttonxA = new JButton("a");         
         buttonxB = new JButton("b");
@@ -120,13 +170,39 @@ public class VistaLogin extends JFrame{
         buttonxX = new JButton("x");
         buttonxY = new JButton("y");
         buttonxZ = new JButton("z");
+   
+        
+        
+        
        
-        label.setBounds(600,25,80,25);
-        userText.setBounds(550,50,165,25);
-        passwordLabel.setBounds(590,71,120,25);
-        passwordText.setBounds(550,95,165,25);
-        button.setBounds(590,130,80,25);
-        recuperar.setBounds(570,170,120,25);
+       
+        //userText.setEnabled(false);
+        
+        
+       
+        
+        buttonxok.setBackground(Color.GREEN);
+        buttonxok.setOpaque(true);
+        
+        buttonxcancel.setBackground(Color.RED);
+        buttonxcancel.setOpaque(true);
+        
+    }
+    
+    private void localizar(){
+        
+        setLayout(null);
+        fondo.setBounds(0, 0, 310, 546);
+
+       
+        pContra.setBounds(118, 275, 180, 30);
+        
+        tIdentificacion.setBounds(115, 226, 125, 30);
+       
+
+        
+        botonCerrar.setBounds(270, 10, 25, 25);
+        
         
         buttonx1.setBounds(375,30,42,30);
         buttonx2.setBounds(420,30,42,30);
@@ -140,6 +216,8 @@ public class VistaLogin extends JFrame{
         buttonxok.setBounds(465,135,44,30);
         buttonx0.setBounds(420,135,42,30);
         buttonxcancel.setBounds(375,135,42,30);
+        
+        botonCerrar.setBounds(270, 10, 25, 25);
         
         buttonxA.setBounds(30,30,44,30);
         buttonxB.setBounds(75,30,44,30);
@@ -167,14 +245,22 @@ public class VistaLogin extends JFrame{
         buttonxX.setBounds(170,135,44,30);
         buttonxY.setBounds(216,135,44,30);
         buttonxZ.setBounds(262,135,46,30);
-
-        this.add(label);
-        this.add(userText);
-        this.add(passwordLabel);
-        this.add(passwordText);
-        this.add(button);
-        this.add(recuperar);
         
+    }
+    
+    private void agregar(){
+        
+       
+       
+        add(tIdentificacion);
+        
+        add(pContra);
+ 
+        add(botonCerrar);
+
+        add(fondo);
+        
+         /*
         this.add(buttonx1);
         this.add(buttonx2);
         this.add(buttonx3);
@@ -214,16 +300,7 @@ public class VistaLogin extends JFrame{
         this.add(buttonxX);
         this.add(buttonxY);
         this.add(buttonxZ);
-        
-        passwordText.setEnabled(false);
-        
-        recuperar.setFont(new Font("Arial", Font.PLAIN, 8));
-        
-        buttonxok.setBackground(Color.GREEN);
-        buttonxok.setOpaque(true);
-        
-        buttonxcancel.setBackground(Color.RED);
-        buttonxcancel.setOpaque(true);
-        
+        */
     }
+  
 }

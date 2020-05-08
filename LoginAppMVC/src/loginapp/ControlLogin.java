@@ -41,8 +41,7 @@ public class ControlLogin implements ActionListener {
         
         v.buttonxok.addActionListener(this);
         v.buttonxcancel.addActionListener(this);
-        v.button.addActionListener(this);
-        v.recuperar.addActionListener(this);
+        
         
         v.buttonxA.addActionListener(this);
         v.buttonxB.addActionListener(this);
@@ -71,6 +70,8 @@ public class ControlLogin implements ActionListener {
         v.buttonxY.addActionListener(this);
         v.buttonxZ.addActionListener(this);
         
+       
+        
         v.setVisible(true);
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
         
@@ -82,7 +83,7 @@ public class ControlLogin implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         
         System.out.println("Button Clicked");
-        
+        /*
         if(e.getSource()==v.buttonxA){
             v.passwordText.setText(v.passwordText.getText() + "a");
         }
@@ -236,6 +237,8 @@ public class ControlLogin implements ActionListener {
             v.passwordText.setText(null);
         }
         
+       
+        
         if(e.getSource() == v.buttonxok || e.getSource() == v.button){
         
             PreparedStatement st;
@@ -267,6 +270,8 @@ public class ControlLogin implements ActionListener {
                 Logger.getLogger(LoginAppMVC.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
+
+*/
         
     }
     
