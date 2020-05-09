@@ -42,6 +42,7 @@ public class ControlLogin implements ActionListener {
         v.buttonxok.addActionListener(this);
         v.buttonxcancel.addActionListener(this);
         
+        v.botonCerrar.addActionListener(this);
         
         v.buttonxA.addActionListener(this);
         v.buttonxB.addActionListener(this);
@@ -83,6 +84,11 @@ public class ControlLogin implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         
         System.out.println("Button Clicked");
+        
+         if(e.getSource()==v.botonCerrar){
+            System.exit(0);
+         }
+        
         /*
         if(e.getSource()==v.buttonxA){
             v.passwordText.setText(v.passwordText.getText() + "a");
