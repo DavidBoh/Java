@@ -72,6 +72,8 @@ public class VistaLogin extends JFrame{
     public JButton buttonxY;
     public JButton buttonxZ;
     public JButton buttonxQ;
+    public JButton buttonxABC;
+    public JButton buttonx123;
    
     
     public JButton botonCerrar;
@@ -86,7 +88,7 @@ public class VistaLogin extends JFrame{
         localizar();
         agregar();       
         setLocationRelativeTo(null);
-        setResizable(false);
+        //setResizable(true);
         setVisible(true);
         setDefaultCloseOperation(3);
             
@@ -130,19 +132,89 @@ public class VistaLogin extends JFrame{
         botonCerrar.setCursor(new Cursor(HAND_CURSOR));
         
   
-        buttonx1 = new JButton("1");
-        buttonx2 = new JButton("2");
-        buttonx3 = new JButton("3");
-        buttonx4 = new JButton("4");
-        buttonx5 = new JButton("5");
-        buttonx6 = new JButton("6");
-        buttonx7 = new JButton("7");
-        buttonx8 = new JButton("8");
-        buttonx9 = new JButton("9");
-        buttonxok = new JButton("✓");
-        buttonx0 = new JButton("0");
-        buttonxcancel = new JButton("x");
-       
+        buttonx1 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/1small.png")));
+        buttonx1.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/1big.png")));
+        buttonx1.setContentAreaFilled(false);
+        buttonx1.setBorder(null);
+        buttonx1.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx2 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/2small.png")));
+        buttonx2.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/2big.png")));
+        buttonx2.setContentAreaFilled(false);
+        buttonx2.setBorder(null);
+        buttonx2.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx3 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/3small.png")));
+        buttonx3.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/3big.png")));
+        buttonx3.setContentAreaFilled(false);
+        buttonx3.setBorder(null);
+        buttonx3.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx4 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/4small.png")));
+        buttonx4.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/4big.png")));
+        buttonx4.setContentAreaFilled(false);
+        buttonx4.setBorder(null);
+        buttonx4.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx5 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/5small.png")));
+        buttonx5.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/5big.png")));
+        buttonx5.setContentAreaFilled(false);
+        buttonx5.setBorder(null);
+        buttonx5.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx6 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/6small.png")));
+        buttonx6.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/6big.png")));
+        buttonx6.setContentAreaFilled(false);
+        buttonx6.setBorder(null);
+        buttonx6.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx7 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/7small.png")));
+        buttonx7.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/7big.png")));
+        buttonx7.setContentAreaFilled(false);
+        buttonx7.setBorder(null);
+        buttonx7.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx8 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/8small.png")));
+        buttonx8.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/8big.png")));
+        buttonx8.setContentAreaFilled(false);
+        buttonx8.setBorder(null);
+        buttonx8.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx9 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/9small.png")));
+        buttonx9.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/9big.png")));
+        buttonx9.setContentAreaFilled(false);
+        buttonx9.setBorder(null);
+        buttonx9.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx0 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/0small.png")));
+        buttonx0.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/0big.png")));
+        buttonx0.setContentAreaFilled(false);
+        buttonx0.setBorder(null);
+        buttonx0.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxABC = new JButton(new ImageIcon(getClass().getResource("/Imagenes/abcsmall.png")));
+        buttonxABC.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/abcbig.png")));
+        buttonxABC.setContentAreaFilled(false);
+        buttonxABC.setBorder(null);
+        buttonxABC.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonx123 = new JButton(new ImageIcon(getClass().getResource("/Imagenes/123small.png")));
+        buttonx123.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/123big.png")));
+        buttonx123.setContentAreaFilled(false);
+        buttonx123.setBorder(null);
+        buttonx123.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxok = new JButton(new ImageIcon(getClass().getResource("/Imagenes/checksmall.png")));
+        buttonxok.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/checkbig.png")));
+        buttonxok.setContentAreaFilled(false);
+        buttonxok.setBorder(null);
+        buttonxok.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxcancel = new JButton(new ImageIcon(getClass().getResource("/Imagenes/cancelsmall.png")));
+        buttonxcancel.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/cancelbig.png")));
+        buttonxcancel.setContentAreaFilled(false);
+        buttonxcancel.setBorder(null);
+        buttonxcancel.setCursor(new Cursor(HAND_CURSOR));
         
         buttonxA = new JButton("a");         
         buttonxB = new JButton("b");
@@ -170,23 +242,7 @@ public class VistaLogin extends JFrame{
         buttonxX = new JButton("x");
         buttonxY = new JButton("y");
         buttonxZ = new JButton("z");
-   
-        
-        
-        
-       
-       
-        //userText.setEnabled(false);
-        
-        
-       
-        
-        buttonxok.setBackground(Color.GREEN);
-        buttonxok.setOpaque(true);
-        
-        buttonxcancel.setBackground(Color.RED);
-        buttonxcancel.setOpaque(true);
-        
+            
     }
     
     private void localizar(){
@@ -194,28 +250,31 @@ public class VistaLogin extends JFrame{
         setLayout(null);
         fondo.setBounds(0, 0, 310, 546);
 
-       
         pContra.setBounds(118, 275, 180, 30);
         
         tIdentificacion.setBounds(115, 226, 125, 30);
-       
 
-        
         botonCerrar.setBounds(270, 10, 25, 25);
         
+        buttonx1.setBounds(90,320,40,40);
+        buttonx2.setBounds(130,320,40,40);
+        buttonx3.setBounds(170,320,40,40);
         
-        buttonx1.setBounds(375,30,42,30);
-        buttonx2.setBounds(420,30,42,30);
-        buttonx3.setBounds(465,30,42,30);
-        buttonx4.setBounds(375,65,42,30);
-        buttonx5.setBounds(420,65,42,30);
-        buttonx6.setBounds(465,65,42,30);
-        buttonx7.setBounds(375,100,42,30);
-        buttonx8.setBounds(420,100,42,30);
-        buttonx9.setBounds(465,100,42,30);
-        buttonxok.setBounds(465,135,44,30);
-        buttonx0.setBounds(420,135,42,30);
-        buttonxcancel.setBounds(375,135,42,30);
+        buttonx4.setBounds(90,360,40,40);
+        buttonx5.setBounds(130,360,40,40);
+        buttonx6.setBounds(170,360,40,40);
+        
+        buttonx7.setBounds(90,400,40,40);
+        buttonx8.setBounds(130,400,40,40);
+        buttonx9.setBounds(170,400,40,40);
+        buttonx0.setBounds(130,440,40,40);
+        
+        buttonxABC.setBounds(200,381,80,80);
+        buttonx123.setBounds(200,381,80,80);
+        
+        buttonxok.setBounds(170,440,40,40);
+        
+        buttonxcancel.setBounds(90,440,40,40);
         
         botonCerrar.setBounds(270, 10, 25, 25);
         
@@ -257,23 +316,28 @@ public class VistaLogin extends JFrame{
         add(pContra);
  
         add(botonCerrar);
+        add(buttonx1);
+        add(buttonx2);
+        add(buttonx3);
+        add(buttonx4);
+        add(buttonx5);
+        add(buttonx6);
+        add(buttonx7);
+        add(buttonx8);
+        add(buttonx9);
+        add(buttonxok);
+        add(buttonxcancel);
+        add(buttonx0);
+        add(buttonxABC);
+        
+        add(buttonx123);
+        buttonx123.setVisible(false);
+        
 
         add(fondo);
         
          /*
-        this.add(buttonx1);
-        this.add(buttonx2);
-        this.add(buttonx3);
-        this.add(buttonx4);
-        this.add(buttonx5);
-        this.add(buttonx6);
-        this.add(buttonx7);
-        this.add(buttonx8);
-        this.add(buttonx9);
-        this.add(buttonxok);
-        this.add(buttonx0);
-        this.add(buttonxcancel);
-               
+                
         this.add(buttonxA);
         this.add(buttonxB);
         this.add(buttonxC);

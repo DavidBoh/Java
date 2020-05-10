@@ -70,6 +70,8 @@ public class ControlLogin implements ActionListener {
         v.buttonxX.addActionListener(this);
         v.buttonxY.addActionListener(this);
         v.buttonxZ.addActionListener(this);
+        v.buttonxABC.addActionListener(this);
+        v.buttonx123.addActionListener(this);
         
        
         
@@ -85,9 +87,90 @@ public class ControlLogin implements ActionListener {
         
         System.out.println("Button Clicked");
         
-         if(e.getSource()==v.botonCerrar){
+        
+        if(e.getSource()==v.buttonxABC){
+            v.buttonx1.setVisible(false);
+            v.buttonx2.setVisible(false);
+            v.buttonx3.setVisible(false);
+            v.buttonx4.setVisible(false);
+            v.buttonx5.setVisible(false);
+            v.buttonx6.setVisible(false);
+            v.buttonx7.setVisible(false);
+            v.buttonx8.setVisible(false);
+            v.buttonx9.setVisible(false);
+            v.buttonx0.setVisible(false);
+            v.buttonxcancel.setVisible(false);
+            v.buttonxok.setVisible(false);
+            v.buttonxABC.setVisible(false);
+            v.buttonx123.setVisible(true);
+            
+        }
+        
+        if(e.getSource()==v.buttonx123){
+            v.buttonx1.setVisible(true);
+            v.buttonx2.setVisible(true);
+            v.buttonx3.setVisible(true);
+            v.buttonx4.setVisible(true);
+            v.buttonx5.setVisible(true);
+            v.buttonx6.setVisible(true);
+            v.buttonx7.setVisible(true);
+            v.buttonx8.setVisible(true);
+            v.buttonx9.setVisible(true);
+            v.buttonx0.setVisible(true);
+            v.buttonxcancel.setVisible(true);
+            v.buttonxok.setVisible(true);
+            v.buttonxABC.setVisible(true);
+            v.buttonx123.setVisible(false);
+            
+        }
+        
+        if(e.getSource()==v.botonCerrar){
             System.exit(0);
-         }
+        }
+         
+        if(e.getSource()==v.buttonx1){
+            v.pContra.setText(v.pContra.getText() + "1");
+        }
+        
+        if(e.getSource()==v.buttonx2){
+            v.pContra.setText(v.pContra.getText() + "2");
+        }
+        
+        if(e.getSource()==v.buttonx3){
+            v.pContra.setText(v.pContra.getText() + "3");
+        }
+        
+        if(e.getSource()==v.buttonx4){
+            v.pContra.setText(v.pContra.getText() + "4");
+        }
+        
+        if(e.getSource()==v.buttonx5){
+            v.pContra.setText(v.pContra.getText() + "5");
+        }
+        
+        if(e.getSource()==v.buttonx6){
+            v.pContra.setText(v.pContra.getText() + "6");
+        }
+        
+        if(e.getSource()==v.buttonx7){
+            v.pContra.setText(v.pContra.getText() + "7");
+        }
+        
+        if(e.getSource()==v.buttonx8){
+            v.pContra.setText(v.pContra.getText() + "8");
+        }
+        
+        if(e.getSource()==v.buttonx9){
+            v.pContra.setText(v.pContra.getText() + "9");
+        }
+        
+        if(e.getSource()==v.buttonx0){
+            v.pContra.setText(v.pContra.getText() + "0");
+        }
+        
+        if(e.getSource()==v.buttonxcancel){
+            v.pContra.setText(null);
+        }
         
         /*
         if(e.getSource()==v.buttonxA){
@@ -199,49 +282,9 @@ public class ControlLogin implements ActionListener {
             v.passwordText.setText(v.passwordText.getText() + "y");
         }
         
-        if(e.getSource()==v.buttonx1){
-            v.passwordText.setText(v.passwordText.getText() + "1");
-        }
+       
         
-        if(e.getSource()==v.buttonx2){
-            v.passwordText.setText(v.passwordText.getText() + "2");
-        }
         
-        if(e.getSource()==v.buttonx3){
-            v.passwordText.setText(v.passwordText.getText() + "3");
-        }
-        
-        if(e.getSource()==v.buttonx4){
-            v.passwordText.setText(v.passwordText.getText() + "4");
-        }
-        
-        if(e.getSource()==v.buttonx5){
-            v.passwordText.setText(v.passwordText.getText() + "5");
-        }
-        
-        if(e.getSource()==v.buttonx6){
-            v.passwordText.setText(v.passwordText.getText() + "6");
-        }
-        
-        if(e.getSource()==v.buttonx7){
-            v.passwordText.setText(v.passwordText.getText() + "7");
-        }
-        
-        if(e.getSource()==v.buttonx8){
-            v.passwordText.setText(v.passwordText.getText() + "8");
-        }
-        
-        if(e.getSource()==v.buttonx9){
-            v.passwordText.setText(v.passwordText.getText() + "9");
-        }
-        
-        if(e.getSource()==v.buttonx0){
-            v.passwordText.setText(v.passwordText.getText() + "0");
-        }
-        
-        if(e.getSource()==v.buttonxcancel){
-            v.passwordText.setText(null);
-        }
         
        
         
