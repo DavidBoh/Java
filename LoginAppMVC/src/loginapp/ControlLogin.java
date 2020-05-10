@@ -100,10 +100,10 @@ public class ControlLogin implements ActionListener {
         v.buttonxy.addActionListener(this);
         v.buttonxz.addActionListener(this);
         v.buttonxm.addActionListener(this);
+        v.mayus.addActionListener(this);
+        v.minus.addActionListener(this);
         
-        
-
-       
+        v.usuarionuevo.addActionListener(this);
         
         v.setVisible(true);
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
@@ -161,7 +161,139 @@ public class ControlLogin implements ActionListener {
             v.buttonxx.setVisible(true);
             v.buttonxy.setVisible(true);
             v.buttonxz.setVisible(true);
+            v.mayus.setVisible(true);
             
+        }
+        
+        if(e.getSource()==v.mayus){
+            v.buttonxb.setVisible(false);
+            v.buttonxc.setVisible(false);
+            v.buttonxa.setVisible(false);
+            v.buttonxd.setVisible(false);
+            v.buttonxe.setVisible(false);
+            v.buttonxf.setVisible(false);
+            v.buttonxg.setVisible(false);
+            v.buttonxh.setVisible(false);
+            v.buttonxi.setVisible(false);
+            v.buttonxj.setVisible(false);
+            v.buttonxk.setVisible(false);
+            v.buttonxl.setVisible(false);
+            v.buttonxm.setVisible(false);
+            v.buttonxn.setVisible(false);
+            v.buttonxñ.setVisible(false);
+            v.buttonxo.setVisible(false);
+            v.buttonxp.setVisible(false);
+            v.buttonxq.setVisible(false);
+            v.buttonxr.setVisible(false);
+            v.buttonxs.setVisible(false);
+            v.buttonxt.setVisible(false);
+            v.buttonxu.setVisible(false);
+            v.buttonxv.setVisible(false);
+            v.buttonxw.setVisible(false);
+            v.buttonxx.setVisible(false);
+            v.buttonxy.setVisible(false);
+            v.buttonxz.setVisible(false);
+
+            v.buttonxA.setVisible(true);
+            v.buttonxB.setVisible(true);
+            v.buttonxC.setVisible(true);
+            v.buttonxD.setVisible(true);
+            v.buttonxE.setVisible(true);
+            v.buttonxF.setVisible(true);
+            v.buttonxG.setVisible(true);
+            v.buttonxH.setVisible(true);
+            v.buttonxI.setVisible(true);
+            v.buttonxJ.setVisible(true);
+            v.buttonxK.setVisible(true);
+            v.buttonxL.setVisible(true);
+            v.buttonxM.setVisible(true);
+            v.buttonxN.setVisible(true);
+            v.buttonxÑ.setVisible(true);
+            v.buttonxO.setVisible(true);
+            v.buttonxP.setVisible(true);
+            v.buttonxQ.setVisible(true);
+            v.buttonxR.setVisible(true);
+            v.buttonxS.setVisible(true);
+            v.buttonxT.setVisible(true);
+            v.buttonxU.setVisible(true);
+            v.buttonxV.setVisible(true);
+            v.buttonxW.setVisible(true);
+            v.buttonxX.setVisible(true);
+            v.buttonxY.setVisible(true);
+            v.buttonxZ.setVisible(true);
+            
+            v.buttonxABC.setVisible(false);
+            v.buttonx123.setVisible(true);
+            v.minus.setVisible(true);
+            v.mayus.setVisible(false);
+            
+            
+        }
+        
+         if(e.getSource()==v.minus){
+             
+            v.buttonxb.setVisible(true);
+            v.buttonxc.setVisible(true);
+            v.buttonxa.setVisible(true);
+            v.buttonxd.setVisible(true);
+            v.buttonxe.setVisible(true);
+            v.buttonxf.setVisible(true);
+            v.buttonxg.setVisible(true);
+            v.buttonxh.setVisible(true);
+            v.buttonxi.setVisible(true);
+            v.buttonxj.setVisible(true);
+            v.buttonxk.setVisible(true);
+            v.buttonxl.setVisible(true);
+            v.buttonxm.setVisible(true);
+            v.buttonxn.setVisible(true);
+            v.buttonxñ.setVisible(true);
+            v.buttonxo.setVisible(true);
+            v.buttonxp.setVisible(true);
+            v.buttonxq.setVisible(true);
+            v.buttonxr.setVisible(true);
+            v.buttonxs.setVisible(true);
+            v.buttonxt.setVisible(true);
+            v.buttonxu.setVisible(true);
+            v.buttonxv.setVisible(true);
+            v.buttonxw.setVisible(true);
+            v.buttonxx.setVisible(true);
+            v.buttonxy.setVisible(true);
+            v.buttonxz.setVisible(true);
+
+            v.buttonxA.setVisible(false);
+            v.buttonxB.setVisible(false);
+            v.buttonxC.setVisible(false);
+            v.buttonxD.setVisible(false);
+            v.buttonxE.setVisible(false);
+            v.buttonxF.setVisible(false);
+            v.buttonxG.setVisible(false);
+            v.buttonxH.setVisible(false);
+            v.buttonxI.setVisible(false);
+            v.buttonxJ.setVisible(false);
+            v.buttonxK.setVisible(false);
+            v.buttonxL.setVisible(false);
+            v.buttonxM.setVisible(false);
+            v.buttonxN.setVisible(false);
+            v.buttonxÑ.setVisible(false);
+            v.buttonxO.setVisible(false);
+            v.buttonxP.setVisible(false);
+            v.buttonxQ.setVisible(false);
+            v.buttonxR.setVisible(false);
+            v.buttonxS.setVisible(false);
+            v.buttonxT.setVisible(false);
+            v.buttonxU.setVisible(false);
+            v.buttonxV.setVisible(false);
+            v.buttonxW.setVisible(false);
+            v.buttonxX.setVisible(false);
+            v.buttonxY.setVisible(false);
+            v.buttonxZ.setVisible(false);
+            
+            v.buttonxABC.setVisible(false);
+            v.buttonx123.setVisible(true);
+            v.minus.setVisible(false);
+            v.mayus.setVisible(true);
+            
+
         }
         
         if(e.getSource()==v.buttonx123){
@@ -208,6 +340,37 @@ public class ControlLogin implements ActionListener {
             v.buttonxx.setVisible(false);
             v.buttonxy.setVisible(false);
             v.buttonxz.setVisible(false);
+            v.mayus.setVisible(false);
+            v.minus.setVisible(false);
+            
+            v.buttonxB.setVisible(false);
+            v.buttonxA.setVisible(false);
+            v.buttonxC.setVisible(false);
+            v.buttonxD.setVisible(false);
+            v.buttonxE.setVisible(false);
+            v.buttonxF.setVisible(false);
+            v.buttonxG.setVisible(false);
+            v.buttonxH.setVisible(false);
+            v.buttonxI.setVisible(false);
+            v.buttonxJ.setVisible(false);
+            v.buttonxK.setVisible(false);
+            v.buttonxL.setVisible(false);
+            v.buttonxM.setVisible(false);
+            v.buttonxN.setVisible(false);
+            v.buttonxÑ.setVisible(false);
+            v.buttonxO.setVisible(false);
+            v.buttonxP.setVisible(false);
+            v.buttonxQ.setVisible(false);
+            v.buttonxR.setVisible(false);
+            v.buttonxS.setVisible(false);
+            v.buttonxT.setVisible(false);
+            v.buttonxU.setVisible(false);
+            v.buttonxV.setVisible(false);
+            v.buttonxW.setVisible(false);
+            v.buttonxX.setVisible(false);
+            v.buttonxY.setVisible(false);
+            v.buttonxZ.setVisible(false);
+            
             
         }
         
