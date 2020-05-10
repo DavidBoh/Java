@@ -45,6 +45,33 @@ public class VistaLogin extends JFrame{
     public JButton buttonx0;
     public JButton buttonxok;
     public JButton buttonxcancel;
+    public JButton buttonxa;
+    public JButton buttonxb;
+    public JButton buttonxc;
+    public JButton buttonxd;
+    public JButton buttonxe;
+    public JButton buttonxf;
+    public JButton buttonxg;
+    public JButton buttonxh;
+    public JButton buttonxi;
+    public JButton buttonxj;
+    public JButton buttonxk;
+    public JButton buttonxl;
+    public JButton buttonxm;
+    public JButton buttonxñ;
+    public JButton buttonxo;
+    public JButton buttonxp;
+    public JButton buttonxq;
+    public JButton buttonxr;
+    public JButton buttonxs;
+    public JButton buttonxt;
+    public JButton buttonxu;
+    public JButton buttonxv;
+    public JButton buttonxw;
+    public JButton buttonxx;
+    public JButton buttonxy;
+    public JButton buttonxz;
+    public JButton buttonxn;
     public JButton buttonxA;
     public JButton buttonxB;
     public JButton buttonxC;
@@ -216,6 +243,12 @@ public class VistaLogin extends JFrame{
         buttonxcancel.setBorder(null);
         buttonxcancel.setCursor(new Cursor(HAND_CURSOR));
         
+        buttonxa = new JButton(new ImageIcon(getClass().getResource("/Imagenes/asmall.png")));
+        buttonxa.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/abig.png")));
+        buttonxa.setContentAreaFilled(false);
+        buttonxa.setBorder(null);
+        buttonxa.setCursor(new Cursor(HAND_CURSOR));
+        
         buttonxA = new JButton("a");         
         buttonxB = new JButton("b");
         buttonxC = new JButton("c");
@@ -278,6 +311,8 @@ public class VistaLogin extends JFrame{
         
         botonCerrar.setBounds(270, 10, 25, 25);
         
+        buttonxa.setBounds(20,320,40,40);
+        
         buttonxA.setBounds(30,30,44,30);
         buttonxB.setBounds(75,30,44,30);
         buttonxC.setBounds(120,30,44,30);
@@ -332,6 +367,9 @@ public class VistaLogin extends JFrame{
         
         add(buttonx123);
         buttonx123.setVisible(false);
+        
+        add(buttonxa);
+        buttonxa.setVisible(false);
         
 
         add(fondo);

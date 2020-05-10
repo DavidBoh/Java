@@ -73,6 +73,7 @@ public class ControlLogin implements ActionListener {
         v.buttonxABC.addActionListener(this);
         v.buttonx123.addActionListener(this);
         
+        v.buttonxa.addActionListener(this);
        
         
         v.setVisible(true);
@@ -104,6 +105,8 @@ public class ControlLogin implements ActionListener {
             v.buttonxABC.setVisible(false);
             v.buttonx123.setVisible(true);
             
+            v.buttonxa.setVisible(true);
+            
         }
         
         if(e.getSource()==v.buttonx123){
@@ -121,6 +124,8 @@ public class ControlLogin implements ActionListener {
             v.buttonxok.setVisible(true);
             v.buttonxABC.setVisible(true);
             v.buttonx123.setVisible(false);
+            
+            v.buttonxa.setVisible(false);
             
         }
         
@@ -171,6 +176,11 @@ public class ControlLogin implements ActionListener {
         if(e.getSource()==v.buttonxcancel){
             v.pContra.setText(null);
         }
+        
+        if(e.getSource()==v.buttonxa){
+            v.pContra.setText(v.pContra.getText() + "a");
+        }
+         
         
         /*
         if(e.getSource()==v.buttonxA){
