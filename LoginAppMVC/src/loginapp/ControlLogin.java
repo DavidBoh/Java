@@ -74,6 +74,35 @@ public class ControlLogin implements ActionListener {
         v.buttonx123.addActionListener(this);
         
         v.buttonxa.addActionListener(this);
+        v.buttonxb.addActionListener(this);
+        v.buttonxd.addActionListener(this);
+        v.buttonxe.addActionListener(this);
+        v.buttonxf.addActionListener(this);
+        v.buttonxg.addActionListener(this);
+        v.buttonxh.addActionListener(this);
+        v.buttonxi.addActionListener(this);
+        v.buttonxj.addActionListener(this);
+        v.buttonxk.addActionListener(this);
+        v.buttonxl.addActionListener(this);
+        v.buttonxn.addActionListener(this);
+        v.buttonxñ.addActionListener(this);
+        v.buttonxo.addActionListener(this);
+        v.buttonxp.addActionListener(this);
+        v.buttonxq.addActionListener(this);
+        v.buttonxr.addActionListener(this);
+        v.buttonxs.addActionListener(this);
+        v.buttonxt.addActionListener(this);
+        v.buttonxu.addActionListener(this);
+        v.buttonxv.addActionListener(this);
+        v.buttonxc.addActionListener(this);
+        v.buttonxw.addActionListener(this);
+        v.buttonxx.addActionListener(this);
+        v.buttonxy.addActionListener(this);
+        v.buttonxz.addActionListener(this);
+        v.buttonxm.addActionListener(this);
+        
+        
+
        
         
         v.setVisible(true);
@@ -106,6 +135,32 @@ public class ControlLogin implements ActionListener {
             v.buttonx123.setVisible(true);
             
             v.buttonxa.setVisible(true);
+            v.buttonxb.setVisible(true);
+            v.buttonxc.setVisible(true);
+            v.buttonxd.setVisible(true);
+            v.buttonxe.setVisible(true);
+            v.buttonxf.setVisible(true);
+            v.buttonxg.setVisible(true);
+            v.buttonxh.setVisible(true);
+            v.buttonxi.setVisible(true);
+            v.buttonxj.setVisible(true);
+            v.buttonxk.setVisible(true);
+            v.buttonxl.setVisible(true);
+            v.buttonxm.setVisible(true);
+            v.buttonxn.setVisible(true);
+            v.buttonxñ.setVisible(true);
+            v.buttonxo.setVisible(true);
+            v.buttonxp.setVisible(true);
+            v.buttonxq.setVisible(true);
+            v.buttonxr.setVisible(true);
+            v.buttonxs.setVisible(true);
+            v.buttonxt.setVisible(true);
+            v.buttonxu.setVisible(true);
+            v.buttonxv.setVisible(true);
+            v.buttonxw.setVisible(true);
+            v.buttonxx.setVisible(true);
+            v.buttonxy.setVisible(true);
+            v.buttonxz.setVisible(true);
             
         }
         
@@ -125,7 +180,34 @@ public class ControlLogin implements ActionListener {
             v.buttonxABC.setVisible(true);
             v.buttonx123.setVisible(false);
             
+            
             v.buttonxa.setVisible(false);
+            v.buttonxb.setVisible(false);
+            v.buttonxc.setVisible(false);
+            v.buttonxd.setVisible(false);
+            v.buttonxe.setVisible(false);
+            v.buttonxf.setVisible(false);
+            v.buttonxg.setVisible(false);
+            v.buttonxh.setVisible(false);
+            v.buttonxi.setVisible(false);
+            v.buttonxj.setVisible(false);
+            v.buttonxk.setVisible(false);
+            v.buttonxl.setVisible(false);
+            v.buttonxm.setVisible(false);
+            v.buttonxn.setVisible(false);
+            v.buttonxñ.setVisible(false);
+            v.buttonxo.setVisible(false);
+            v.buttonxp.setVisible(false);
+            v.buttonxq.setVisible(false);
+            v.buttonxr.setVisible(false);
+            v.buttonxs.setVisible(false);
+            v.buttonxt.setVisible(false);
+            v.buttonxu.setVisible(false);
+            v.buttonxv.setVisible(false);
+            v.buttonxw.setVisible(false);
+            v.buttonxx.setVisible(false);
+            v.buttonxy.setVisible(false);
+            v.buttonxz.setVisible(false);
             
         }
         

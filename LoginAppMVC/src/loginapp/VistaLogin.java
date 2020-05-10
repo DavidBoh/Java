@@ -249,6 +249,166 @@ public class VistaLogin extends JFrame{
         buttonxa.setBorder(null);
         buttonxa.setCursor(new Cursor(HAND_CURSOR));
         
+        buttonxb = new JButton(new ImageIcon(getClass().getResource("/Imagenes/bsmall.png")));
+        buttonxb.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/bbig.png")));
+        buttonxb.setContentAreaFilled(false);
+        buttonxb.setBorder(null);
+        buttonxb.setCursor(new Cursor(HAND_CURSOR));
+        
+        
+        
+        buttonxc = new JButton(new ImageIcon(getClass().getResource("/Imagenes/csmall.png")));
+        buttonxc.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/cbig.png")));
+        buttonxc.setContentAreaFilled(false);
+        buttonxc.setBorder(null);
+        buttonxc.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxd = new JButton(new ImageIcon(getClass().getResource("/Imagenes/dsmall.png")));
+        buttonxd.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/dbig.png")));
+        buttonxd.setContentAreaFilled(false);
+        buttonxd.setBorder(null);
+        buttonxd.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxe = new JButton(new ImageIcon(getClass().getResource("/Imagenes/esmall.png")));
+        buttonxe.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/ebig.png")));
+        buttonxe.setContentAreaFilled(false);
+        buttonxe.setBorder(null);
+        buttonxe.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxf = new JButton(new ImageIcon(getClass().getResource("/Imagenes/fsmall.png")));
+        buttonxf.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/fbig.png")));
+        buttonxf.setContentAreaFilled(false);
+        buttonxf.setBorder(null);
+        buttonxf.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxg = new JButton(new ImageIcon(getClass().getResource("/Imagenes/gsmall.png")));
+        buttonxg.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/gbig.png")));
+        buttonxg.setContentAreaFilled(false);
+        buttonxg.setBorder(null);
+        buttonxg.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxh = new JButton(new ImageIcon(getClass().getResource("/Imagenes/hsmall.png")));
+        buttonxh.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/hbig.png")));
+        buttonxh.setContentAreaFilled(false);
+        buttonxh.setBorder(null);
+        buttonxh.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxi = new JButton(new ImageIcon(getClass().getResource("/Imagenes/ismall.png")));
+        buttonxi.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/ibig.png")));
+        buttonxi.setContentAreaFilled(false);
+        buttonxi.setBorder(null);
+        buttonxi.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxj = new JButton(new ImageIcon(getClass().getResource("/Imagenes/jsmall.png")));
+        buttonxj.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/jbig.png")));
+        buttonxj.setContentAreaFilled(false);
+        buttonxj.setBorder(null);
+        buttonxj.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxk = new JButton(new ImageIcon(getClass().getResource("/Imagenes/ksmall.png")));
+        buttonxk.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/kbig.png")));
+        buttonxk.setContentAreaFilled(false);
+        buttonxk.setBorder(null);
+        buttonxk.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxl = new JButton(new ImageIcon(getClass().getResource("/Imagenes/lsmall.png")));
+        buttonxl.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/lbig.png")));
+        buttonxl.setContentAreaFilled(false);
+        buttonxl.setBorder(null);
+        buttonxl.setCursor(new Cursor(HAND_CURSOR));
+        
+        /*
+        
+        buttonxm = new JButton(new ImageIcon(getClass().getResource("/Imagenes/msmall.png")));
+        buttonxm.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/mbig.png")));
+        buttonxm.setContentAreaFilled(false);
+        buttonxm.setBorder(null);
+        buttonxm.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxñ = new JButton(new ImageIcon(getClass().getResource("/Imagenes/ñsmall.png")));
+        buttonxñ.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/ñbig.png")));
+        buttonxñ.setContentAreaFilled(false);
+        buttonxñ.setBorder(null);
+        buttonxñ.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxn = new JButton(new ImageIcon(getClass().getResource("/Imagenes/nsmall.png")));
+        buttonxn.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/nbig.png")));
+        buttonxn.setContentAreaFilled(false);
+        buttonxn.setBorder(null);
+        buttonxn.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxo = new JButton(new ImageIcon(getClass().getResource("/Imagenes/osmall.png")));
+        buttonxo.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/obig.png")));
+        buttonxo.setContentAreaFilled(false);
+        buttonxo.setBorder(null);
+        buttonxo.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxp = new JButton(new ImageIcon(getClass().getResource("/Imagenes/psmall.png")));
+        buttonxp.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/pbig.png")));
+        buttonxp.setContentAreaFilled(false);
+        buttonxp.setBorder(null);
+        buttonxp.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxq = new JButton(new ImageIcon(getClass().getResource("/Imagenes/qsmall.png")));
+        buttonxq.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/qbig.png")));
+        buttonxq.setContentAreaFilled(false);
+        buttonxq.setBorder(null);
+        buttonxq.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxr = new JButton(new ImageIcon(getClass().getResource("/Imagenes/rsmall.png")));
+        buttonxr.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/rbig.png")));
+        buttonxr.setContentAreaFilled(false);
+        buttonxr.setBorder(null);
+        buttonxr.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxs = new JButton(new ImageIcon(getClass().getResource("/Imagenes/ssmall.png")));
+        buttonxs.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/sbig.png")));
+        buttonxs.setContentAreaFilled(false);
+        buttonxs.setBorder(null);
+        buttonxs.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxt = new JButton(new ImageIcon(getClass().getResource("/Imagenes/tsmall.png")));
+        buttonxt.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/tbig.png")));
+        buttonxt.setContentAreaFilled(false);
+        buttonxt.setBorder(null);
+        buttonxt.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxu = new JButton(new ImageIcon(getClass().getResource("/Imagenes/usmall.png")));
+        buttonxu.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/ubig.png")));
+        buttonxu.setContentAreaFilled(false);
+        buttonxu.setBorder(null);
+        buttonxu.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxv = new JButton(new ImageIcon(getClass().getResource("/Imagenes/vsmall.png")));
+        buttonxv.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/vbig.png")));
+        buttonxv.setContentAreaFilled(false);
+        buttonxv.setBorder(null);
+        buttonxv.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxw = new JButton(new ImageIcon(getClass().getResource("/Imagenes/wsmall.png")));
+        buttonxw.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/wbig.png")));
+        buttonxw.setContentAreaFilled(false);
+        buttonxw.setBorder(null);
+        buttonxw.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxx = new JButton(new ImageIcon(getClass().getResource("/Imagenes/xsmall.png")));
+        buttonxx.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/xbig.png")));
+        buttonxx.setContentAreaFilled(false);
+        buttonxx.setBorder(null);
+        buttonxx.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxy = new JButton(new ImageIcon(getClass().getResource("/Imagenes/ysmall.png")));
+        buttonxy.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/ybig.png")));
+        buttonxy.setContentAreaFilled(false);
+        buttonxy.setBorder(null);
+        buttonxy.setCursor(new Cursor(HAND_CURSOR));
+        
+        buttonxz = new JButton(new ImageIcon(getClass().getResource("/Imagenes/zsmall.png")));
+        buttonxz.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/zbig.png")));
+        buttonxz.setContentAreaFilled(false);
+        buttonxz.setBorder(null);
+        buttonxz.setCursor(new Cursor(HAND_CURSOR));
+        */
         buttonxA = new JButton("a");         
         buttonxB = new JButton("b");
         buttonxC = new JButton("c");
@@ -313,6 +473,40 @@ public class VistaLogin extends JFrame{
         
         buttonxa.setBounds(20,320,40,40);
         
+        buttonxb.setBounds(60,320,40,40);
+        
+        
+        buttonxc.setBounds(120,320,40,40);
+        buttonxd.setBounds(160,320,40,40);
+        buttonxe.setBounds(200,320,40,40);
+        buttonxf.setBounds(240,320,40,40);
+        
+        buttonxg.setBounds(20,360,40,40);
+        buttonxh.setBounds(60,360,40,40);
+        buttonxi.setBounds(120,360,40,40);
+        buttonxj.setBounds(160,360,40,40);
+        buttonxk.setBounds(200,360,40,40);
+        buttonxl.setBounds(240,360,40,40);
+        /*
+        buttonxm.setBounds(20,400,40,40);
+        buttonxn.setBounds(60,400,40,40);
+        buttonxñ.setBounds(120,400,40,40);
+        buttonxo.setBounds(160,400,40,40);
+        buttonxp.setBounds(200,400,40,40);
+        buttonxq.setBounds(240,400,40,40);
+        
+        buttonxr.setBounds(20,440,40,40);
+        buttonxs.setBounds(60,440,40,40);
+        buttonxt.setBounds(120,440,40,40);
+        buttonxu.setBounds(160,440,40,40);
+        buttonxv.setBounds(200,440,40,40);
+        buttonxw.setBounds(240,440,40,40);
+        
+        buttonxx.setBounds(20,480,40,40);
+        buttonxy.setBounds(60,480,40,40);
+        buttonxz.setBounds(120,480,40,40);
+        
+        */
         buttonxA.setBounds(30,30,44,30);
         buttonxB.setBounds(75,30,44,30);
         buttonxC.setBounds(120,30,44,30);
@@ -371,6 +565,61 @@ public class VistaLogin extends JFrame{
         add(buttonxa);
         buttonxa.setVisible(false);
         
+        add(buttonxb);
+        buttonxb.setVisible(false);
+        
+        add(buttonxc);
+        buttonxc.setVisible(false);
+        add(buttonxd);
+        buttonxd.setVisible(false);
+        add(buttonxe);
+        buttonxe.setVisible(false);
+        add(buttonxf);
+        buttonxf.setVisible(false);
+        add(buttonxg);
+        buttonxg.setVisible(false);
+        add(buttonxh);
+        buttonxh.setVisible(false);
+        add(buttonxi);
+        buttonxi.setVisible(false);
+        add(buttonxj);
+        buttonxj.setVisible(false);
+        add(buttonxk);
+        buttonxk.setVisible(false);
+        add(buttonxl);
+        buttonxl.setVisible(false);
+        /*
+        add(buttonxm);
+        buttonxm.setVisible(false);
+        add(buttonxn);
+        buttonxn.setVisible(false);
+        add(buttonxñ);
+        buttonxñ.setVisible(false);
+        add(buttonxo);
+        buttonxo.setVisible(false);
+        add(buttonxp);
+        buttonxp.setVisible(false);
+        add(buttonxq);
+        buttonxq.setVisible(false);
+        add(buttonxr);
+        buttonxr.setVisible(false);
+        add(buttonxs);
+        buttonxs.setVisible(false);
+        add(buttonxt);
+        buttonxt.setVisible(false);
+        add(buttonxu);
+        buttonxu.setVisible(false);
+        add(buttonxv);
+        buttonxv.setVisible(false);
+        add(buttonxw);
+        buttonxw.setVisible(false);
+        add(buttonxx);
+        buttonxx.setVisible(false);
+        add(buttonxy);
+        buttonxy.setVisible(false);
+        add(buttonxz);
+        buttonxz.setVisible(false);
+        */
 
         add(fondo);
         
