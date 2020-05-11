@@ -15,6 +15,9 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
 import javax.swing.JOptionPane;
+import loginapp.ControlLogin;
+import loginapp.ModeloLogin;
+import loginapp.VistaLogin;
 
 /**
  *
@@ -30,6 +33,7 @@ public class ControlRegistro implements ActionListener, KeyListener {
         this.bdRegistro = bd;
         ventanaR.botonRegistrar.addActionListener(this);
         ventanaR.botonCerrar.addActionListener(this);
+        ventanaR.goback.addActionListener(this);
         ventanaR.gettNombre().addKeyListener(this);
     }
 
@@ -44,7 +48,16 @@ public class ControlRegistro implements ActionListener, KeyListener {
         if (ae.getSource() == ventanaR.botonCerrar) {
             System.exit(0);
         }
+        
+        if (ae.getSource() == ventanaR.goback){
+            ventanaR.dispose();
+            VistaLogin v1= new VistaLogin();
+            ModeloLogin m1= new ModeloLogin();
+            ControlLogin c1= new ControlLogin(m1,v1);
+        }
     }
+    
+    
 
     private void ingresarUsuario(VentanaRegistro ventana, BDRegistro datos) {
         if (datos.confirmarU(ventana.gettNombre().getText()) && !"".equals(ventana.gettNombre().getText())) {

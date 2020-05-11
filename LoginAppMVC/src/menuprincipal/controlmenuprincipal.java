@@ -8,6 +8,10 @@ package menuprincipal;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import loginapp.ControlLogin;
+import loginapp.LoginAppMVC;
+import loginapp.ModeloLogin;
+import loginapp.VistaLogin;
 
 /**
  *
@@ -24,6 +28,7 @@ public class controlmenuprincipal implements ActionListener {
         v.depositarx.addActionListener(this);
         v.retirarx.addActionListener(this);
         v.cerrarsesionx.addActionListener(this);
+        v.aprende.addActionListener(this);
         
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
     }
@@ -36,6 +41,13 @@ public class controlmenuprincipal implements ActionListener {
         System.out.println("clicked");
         if(e.getSource()==v.cerrarventanax){
             System.exit(0);
+        }
+        
+        if(e.getSource()==v.cerrarsesionx){
+            v.dispose();
+            VistaLogin v1= new VistaLogin();
+            ModeloLogin m1= new ModeloLogin();
+            ControlLogin c1= new ControlLogin(m1,v1);
         }
         
     }

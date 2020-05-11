@@ -5,10 +5,53 @@
  */
 package restablecimiento;
 
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
+import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import loginapp.ControlLogin;
+import loginapp.ModeloLogin;
+import loginapp.VistaLogin;
+
 /**
  *
  * @author herrboh
  */
-public class controlrestablecimiento {
+public class controlrestablecimiento implements ActionListener {
+
+    vistarestablecimiento v;
+    
+    public controlrestablecimiento(vistarestablecimiento vis){
+        v = vis;
+        
+        v.cerrarventanax.addActionListener(this);
+        v.regresarx.addActionListener(this);
+        v.aceptar.addActionListener(this);
+        
+        v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
+    }
+    
+    
+    
+    
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        
+        if(e.getSource()==v.cerrarventanax){
+            System.exit(0);
+        }
+        
+        if(e.getSource()==v.regresarx){
+            v.dispose();
+            VistaLogin v1= new VistaLogin();
+            ModeloLogin m1= new ModeloLogin();
+            ControlLogin c1= new ControlLogin(m1,v1);          
+            
+            
+        }
+        
+        
+        
+    }
     
 }

@@ -31,7 +31,7 @@ public class VentanaRegistro extends JFrame {
     private TextPrompt nombre, apellido, identificacion, correo, contraseña;    
     public JPasswordField pContra;
     private Color colorFuente, tFondo;
-    public JButton botonRegistrar, botonCerrar;    
+    public JButton botonRegistrar, botonCerrar,goback;    
     public JComboBox JCombotipoIdentificacion;
 
     public VentanaRegistro() {
@@ -97,6 +97,12 @@ public class VentanaRegistro extends JFrame {
         JCombotipoIdentificacion.setBorder(null);
         JCombotipoIdentificacion.setForeground(colorFuente);
         
+        goback = new JButton(new ImageIcon(getClass().getResource("/Imagenes/goback.png")));
+        goback.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/goback_g.png")));       
+        goback.setContentAreaFilled(false);
+        goback.setBorder(null);
+        goback.setCursor(new Cursor(HAND_CURSOR));
+        
         botonRegistrar = new JButton(new ImageIcon(getClass().getResource("/Imagenes/boton.png")));
         botonRegistrar.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/boton_g.png")));       
         botonRegistrar.setContentAreaFilled(false);
@@ -111,9 +117,12 @@ public class VentanaRegistro extends JFrame {
     }
 
     private void localizar(){
+        
         setLayout(null);
 
         fondo.setBounds(0, 0, 310, 546);
+        
+        goback.setBounds(20,20,47,47);
 
         tNombre.setBounds(65, 228, 180, 30);
         tApellido.setBounds(65, 276, 180, 30);        
@@ -132,6 +141,8 @@ public class VentanaRegistro extends JFrame {
         add(tNombre);
         add(tApellido);
         add(tCorreo);
+        
+        add(goback);
         
         add(JCombotipoIdentificacion);
         add(tIdentificacion);

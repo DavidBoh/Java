@@ -136,7 +136,7 @@ public class VistaLogin extends JFrame{
         
         userText = new JTextField(20);
   
-        tIdentificacion = new JTextField();
+        tIdentificacion = new JTextField(11);
         tIdentificacion.setBackground(tFondo);
         tIdentificacion.setOpaque(false);
         tIdentificacion.setBorder(null);
@@ -144,7 +144,7 @@ public class VistaLogin extends JFrame{
         identificacion = new TextPrompt("Identificación", tIdentificacion); 
         
         
-        pContra = new JPasswordField();
+        pContra = new JPasswordField(11);
         pContra.setBackground(tFondo);
         pContra.setOpaque(false);
         pContra.setBorder(null);

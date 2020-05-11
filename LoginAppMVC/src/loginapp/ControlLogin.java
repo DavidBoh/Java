@@ -16,6 +16,7 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import javax.swing.text.View;
 import menuprincipal.vistamenuprincipal;
 import menuprincipal.controlmenuprincipal;
+import restablecimiento.controlrestablecimiento;
 
 
 /**
@@ -29,7 +30,7 @@ public class ControlLogin implements ActionListener {
     
     
     
-    ControlLogin(ModeloLogin mod, VistaLogin vis){
+    public ControlLogin(ModeloLogin mod, VistaLogin vis){
         v=vis;
         m=mod;
               
@@ -111,7 +112,7 @@ public class ControlLogin implements ActionListener {
         v.tIdentificacion.addActionListener(this);
         
         v.usuarionuevo.addActionListener(this);
-        
+        v.restablecer.addActionListener(this);
         
         v.setVisible(true);
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
@@ -243,6 +244,13 @@ public class ControlLogin implements ActionListener {
             
             vistamenuprincipal mainmenu = new vistamenuprincipal();
             controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu);
+        }
+        
+        if(e.getSource()==v.restablecer){
+            v.dispose();
+            
+            vistarestablecimiento restab = new vistarestablecimiento();
+            controlrestablecimiento controlre = new controlrestablecimiento(restab);
         }
         
         if(e.getSource()==v.usuarionuevo){
