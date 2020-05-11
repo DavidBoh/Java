@@ -5,6 +5,8 @@
  */
 package menuprincipal;
 
+import aprender.controlaprender;
+import aprender.vistaaprender;
 import deposito.controldeposito;
 import deposito.vistadeposito;
 import java.awt.event.ActionEvent;
@@ -68,6 +70,14 @@ public class controlmenuprincipal implements ActionListener {
             
             vistadeposito  depositovis = new vistadeposito();
             controldeposito depositoc = new controldeposito(depositovis);
+        }
+        
+        if(e.getSource() == v.aprende){
+            v.dispose();
+            
+            
+            vistaaprender  aprendevis = new vistaaprender();
+            controlaprender aprendec = new controlaprender(aprendevis);
         }
         
     }

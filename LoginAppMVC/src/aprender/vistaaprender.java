@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package deposito;
+package aprender;
 
 import java.awt.Color;
 import java.awt.Cursor;
@@ -17,15 +17,20 @@ import javax.swing.JLabel;
  *
  * @author herrboh
  */
-public class vistadeposito extends JFrame {
+public class vistaaprender extends JFrame {
     
     public JButton cerrarventanax;
     public JButton aceptar;
     public JButton regresarx;
     
+    public JButton ingresos;
+    public JButton ahorros;
+    public JButton interes;
+    public JButton pensiones;
+    
     public JLabel fondo;
     
-    public vistadeposito(){
+    public vistaaprender (){
         
         setSize(310,546);
         setUndecorated(true);
@@ -42,7 +47,7 @@ public class vistadeposito extends JFrame {
         
         fondo = new JLabel();
         fondo.setOpaque(true);
-        fondo.setIcon(new ImageIcon(getClass().getResource("/Imagenes/DEPOSITA.jpg")));
+        fondo.setIcon(new ImageIcon(getClass().getResource("/Imagenes/APRENDE.jpg")));
         fondo.setBackground(new Color(72, 181, 232));
         
         cerrarventanax = new JButton(new ImageIcon(getClass().getResource("/Imagenes/cerrar.png")));
@@ -62,6 +67,7 @@ public class vistadeposito extends JFrame {
         regresarx.setContentAreaFilled(false);
         regresarx.setBorder(null);
         regresarx.setCursor(new Cursor(HAND_CURSOR));
+        
     }
     
     private void localizar(){
@@ -80,7 +86,6 @@ public class vistadeposito extends JFrame {
     
     private void agregar(){
         
-        
         add(cerrarventanax);
         add(regresarx);
         add(aceptar);
@@ -88,5 +93,4 @@ public class vistadeposito extends JFrame {
         add(fondo);//siempre añadirlo al final
         
     }
-    
 }
