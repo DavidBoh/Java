@@ -253,6 +253,8 @@ public class ControlLogin implements ActionListener {
             controlrestablecimiento controlre = new controlrestablecimiento(restab);
         }
         
+        
+        
         if(e.getSource()==v.usuarionuevo){
             
            v.dispose();

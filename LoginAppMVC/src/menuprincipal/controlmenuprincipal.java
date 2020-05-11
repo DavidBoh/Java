@@ -5,13 +5,17 @@
  */
 package menuprincipal;
 
+import deposito.controldeposito;
+import deposito.vistadeposito;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import loginapp.ControlLogin;
-import loginapp.LoginAppMVC;
+
 import loginapp.ModeloLogin;
 import loginapp.VistaLogin;
+import retiro.controlretiro;
+import retiro.vistaretiro;
 
 /**
  *
@@ -48,6 +52,22 @@ public class controlmenuprincipal implements ActionListener {
             VistaLogin v1= new VistaLogin();
             ModeloLogin m1= new ModeloLogin();
             ControlLogin c1= new ControlLogin(m1,v1);
+        }
+        
+        if(e.getSource() == v.retirarx){
+            v.dispose();
+            
+            
+            vistaretiro  retirovis = new vistaretiro();
+            controlretiro retiroc = new controlretiro(retirovis);
+        }
+        
+        if(e.getSource() == v.depositarx){
+            v.dispose();
+            
+            
+            vistadeposito  depositovis = new vistadeposito();
+            controldeposito depositoc = new controldeposito(depositovis);
         }
         
     }
