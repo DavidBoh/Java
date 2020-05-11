@@ -5,15 +5,18 @@
  */
 package loginapp;
 
+import Controlador.ControlRegistro;
+import Modelo.BDRegistro;
+import Vista.VentanaRegistro;
+import restablecimiento.vistarestablecimiento;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+import java.awt.event.MouseListener;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
-import javax.swing.JOptionPane;
+import javax.swing.text.View;
+import menuprincipal.vistamenuprincipal;
+import menuprincipal.controlmenuprincipal;
+
 
 /**
  *
@@ -23,6 +26,8 @@ public class ControlLogin implements ActionListener {
     
     VistaLogin v;
     ModeloLogin m;
+    
+    
     
     ControlLogin(ModeloLogin mod, VistaLogin vis){
         v=vis;
@@ -102,8 +107,11 @@ public class ControlLogin implements ActionListener {
         v.buttonxm.addActionListener(this);
         v.mayus.addActionListener(this);
         v.minus.addActionListener(this);
+        v.pContra.addActionListener(this);
+        v.tIdentificacion.addActionListener(this);
         
         v.usuarionuevo.addActionListener(this);
+        
         
         v.setVisible(true);
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
@@ -228,6 +236,23 @@ public class ControlLogin implements ActionListener {
             v.mayus.setVisible(false);
             
             
+        }
+        
+        if(e.getSource()==v.buttonxok){
+            v.dispose();
+            
+            vistamenuprincipal mainmenu = new vistamenuprincipal();
+            controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu);
+        }
+        
+        if(e.getSource()==v.usuarionuevo){
+            
+           v.dispose();
+           
+           VentanaRegistro r = new VentanaRegistro();
+           BDRegistro bd = new BDRegistro();
+           ControlRegistro ct = new ControlRegistro(r,bd);
+           
         }
         
          if(e.getSource()==v.minus){
@@ -377,11 +402,66 @@ public class ControlLogin implements ActionListener {
         if(e.getSource()==v.botonCerrar){
             System.exit(0);
         }
+        
+        /*
+        if(v.pContra.isCursorSet()){
+            v.tIdentificacion.setEditable(false);
+            
+            
+            if(!v.tIdentificacion.isEditable()){
+                
+                if(e.getSource()==v.buttonx1){
+                    v.pContra.setText(v.pContra.getText() + "1");
+                }
+                
+            }
+            
+            
+        }
+        
+         v.pContra.addMouseListener((MouseListener) this);
+         if(v.pContra.isCursorSet()){
+             //v.tIdentificacion.setEnabled(false);
+             System.out.println("jjaaja");
+           
+            if(e.getSource()==v.buttonx1){
+                 v.pContra.setText(v.pContra.getText() + "1");
+            }
          
+         }
+            
+            
+        
+        
+        if(v.tIdentificacion.isEditable()){
+           // v.pContra.setEnabled(false);
+                
+                if(e.getSource()==v.buttonx1){
+                    v.tIdentificacion.setText(v.tIdentificacion.getText() + "1");
+                }        
+        }
+        
+        /*
+        if(e.getSource()==v.pContra && v.buttonx1.hasFocus()){
+            
+                
+                    v.pContra.setText(v.pContra.getText() + "1");
+                
+                
+        }
+        
+        
+        if(e.getSource()==v.buttonx1){
+                if (v.pContra.isFocusOwner()){
+                    v.pContra.setText(v.pContra.getText() + "1");
+                }
+        }
+            
+        /*
         if(e.getSource()==v.buttonx1){
             v.pContra.setText(v.pContra.getText() + "1");
         }
-        
+        */
         if(e.getSource()==v.buttonx2){
             v.pContra.setText(v.pContra.getText() + "2");
         }
@@ -426,6 +506,7 @@ public class ControlLogin implements ActionListener {
             v.pContra.setText(v.pContra.getText() + "a");
         }
          
+       
         
         /*
         if(e.getSource()==v.buttonxA){

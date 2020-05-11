@@ -104,6 +104,7 @@ public class VistaLogin extends JFrame{
     public JButton mayus;
     public JButton minus;
     public JButton usuarionuevo;
+    public JButton restablecer;
     
     public JButton botonCerrar;
     private Color colorFuente, tFondo;
@@ -148,8 +149,11 @@ public class VistaLogin extends JFrame{
         pContra.setOpaque(false);
         pContra.setBorder(null);
         contraseña = new TextPrompt("Contraseña", pContra);
-        //pContra.setFocusable(false);
+        pContra.setFocusable(true);
+        
+        //tIdentificacion.setEnabled(false);
         //pContra.setEnabled(true);
+       // pContra.setEditable(false);
         //pContra.setClickable(true);
         
         usuarionuevo = new JButton(new ImageIcon(getClass().getResource("/Imagenes/NUEVO.png")));
@@ -157,6 +161,12 @@ public class VistaLogin extends JFrame{
         usuarionuevo.setContentAreaFilled(false);
         usuarionuevo.setBorder(null);
         usuarionuevo.setCursor(new Cursor(HAND_CURSOR));
+        
+        restablecer = new JButton(new ImageIcon(getClass().getResource("/Imagenes/REESTABLECERSMALL.png")));
+        restablecer.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/REESTABLECERSBIG.png")));
+        restablecer.setContentAreaFilled(false);
+        restablecer.setBorder(null);
+        restablecer.setCursor(new Cursor(HAND_CURSOR));
         
         botonCerrar = new JButton(new ImageIcon(getClass().getResource("/Imagenes/cerrar.png")));
         botonCerrar.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/cerrar_g.png")));
@@ -237,8 +247,8 @@ public class VistaLogin extends JFrame{
         buttonx123.setBorder(null);
         buttonx123.setCursor(new Cursor(HAND_CURSOR));
         
-        buttonxok = new JButton(new ImageIcon(getClass().getResource("/Imagenes/checksmall.png")));
-        buttonxok.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/checkbig.png")));
+        buttonxok = new JButton(new ImageIcon(getClass().getResource("/Imagenes/boton.png")));
+        buttonxok.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/boton_g.png")));
         buttonxok.setContentAreaFilled(false);
         buttonxok.setBorder(null);
         buttonxok.setCursor(new Cursor(HAND_CURSOR));
@@ -605,6 +615,7 @@ public class VistaLogin extends JFrame{
         fondo.setBounds(0, 0, 310, 546);
         
         usuarionuevo.setBounds(25,20,80,80);
+        restablecer.setBounds(200,20,80,80);
 
         pContra.setBounds(118, 275, 180, 30);
         
@@ -629,7 +640,7 @@ public class VistaLogin extends JFrame{
         
         
         
-        buttonxok.setBounds(170,440,40,40);
+        buttonxok.setBounds(170,440,45,45);
         
         buttonxcancel.setBounds(90,440,40,40);
         
@@ -713,6 +724,7 @@ public class VistaLogin extends JFrame{
         add(tIdentificacion);
         add(usuarionuevo);
         add(pContra);
+        add(restablecer);
  
         add(botonCerrar);
         add(buttonx1);
