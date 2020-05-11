@@ -153,7 +153,7 @@ public class VistaLogin extends JFrame{
         
         //tIdentificacion.setEnabled(false);
         //pContra.setEnabled(true);
-       // pContra.setEditable(false);
+        pContra.setEditable(false);
         //pContra.setClickable(true);
         
         usuarionuevo = new JButton(new ImageIcon(getClass().getResource("/Imagenes/NUEVO.png")));

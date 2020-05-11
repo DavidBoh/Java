@@ -68,6 +68,30 @@ public class vistaaprender extends JFrame {
         regresarx.setBorder(null);
         regresarx.setCursor(new Cursor(HAND_CURSOR));
         
+        ingresos = new JButton(new ImageIcon(getClass().getResource("/Imagenes/moneda.png")));
+        ingresos.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/moneda.png")));
+        ingresos.setContentAreaFilled(false);
+        ingresos.setBorder(null);
+        ingresos.setCursor(new Cursor(HAND_CURSOR));
+                
+        ahorros = new JButton(new ImageIcon(getClass().getResource("/Imagenes/ahorro.png")));
+        ahorros.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/ahorro.png")));
+        ahorros.setContentAreaFilled(false);
+        ahorros.setBorder(null);
+        ahorros.setCursor(new Cursor(HAND_CURSOR));
+                
+        interes = new JButton(new ImageIcon(getClass().getResource("/Imagenes/calc.png")));
+        interes.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/calc.png")));
+        interes.setContentAreaFilled(false);
+        interes.setBorder(null);
+        interes.setCursor(new Cursor(HAND_CURSOR));
+                
+        pensiones = new JButton(new ImageIcon(getClass().getResource("/Imagenes/retiro.png")));
+        pensiones.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/retiro.png")));
+        pensiones.setContentAreaFilled(false);
+        pensiones.setBorder(null);
+        pensiones.setCursor(new Cursor(HAND_CURSOR));
+        
     }
     
     private void localizar(){
@@ -80,7 +104,13 @@ public class vistaaprender extends JFrame {
         
         regresarx.setBounds(20,20,47,47);
         
-        aceptar.setBounds(129, 465, 47, 47);
+        //aceptar.setBounds(129, 465, 47, 47);
+        
+        ingresos.setBounds(30,200,80,80);
+        interes.setBounds(200,200,80,80);
+        
+        pensiones.setBounds(200,370,80,80);
+        ahorros.setBounds(30,370,80,80);
         
     }
     
@@ -89,6 +119,11 @@ public class vistaaprender extends JFrame {
         add(cerrarventanax);
         add(regresarx);
         add(aceptar);
+        
+        add(ingresos);
+        add(ahorros);
+        add(interes);
+        add(pensiones);
         
         add(fondo);//siempre añadirlo al final
         
