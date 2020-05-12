@@ -22,7 +22,7 @@ public class BDRegistro {
     //ruta de la base de datos
     private String url = "jdbc:mysql://localhost:3306/dineroe";
     private String username = "root";
-    private String password = "Girugamesh1.";
+    private String password = "salve3587.";
     private Connection connect;
 
     public void conectar() {
@@ -80,7 +80,7 @@ public class BDRegistro {
             campoDB = "call verificarUsuario(?,?);";
             CallableStatement st = connect.prepareCall(campoDB);
             st.setString(1, usuario);
-            st.setString(1, contrasena);
+            st.setString(2, contrasena);
             result = st.executeQuery();
             while (result.next()) {
                 if (result.getString(1).equals(usuario) && result.getString(2).equals(contrasena)) {

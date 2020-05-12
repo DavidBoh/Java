@@ -11,9 +11,7 @@ import Vista.VentanaRegistro;
 import restablecimiento.vistarestablecimiento;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.MouseListener;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
-import javax.swing.text.View;
 import menuprincipal.vistamenuprincipal;
 import menuprincipal.controlmenuprincipal;
 import restablecimiento.controlrestablecimiento;
@@ -467,11 +465,11 @@ public class ControlLogin implements ActionListener {
                 }
         }
             
-        /*
+        */
         if(e.getSource()==v.buttonx1){
             v.pContra.setText(v.pContra.getText() + "1");
         }
-        */
+        
         if(e.getSource()==v.buttonx2){
             v.pContra.setText(v.pContra.getText() + "2");
         }
@@ -515,122 +513,223 @@ public class ControlLogin implements ActionListener {
         if(e.getSource()==v.buttonxa){
             v.pContra.setText(v.pContra.getText() + "a");
         }
+
+        if(e.getSource()==v.buttonxb){
+            v.pContra.setText(v.pContra.getText() + "b");
+        }
+
+        if(e.getSource()==v.buttonxc){
+            v.pContra.setText(v.pContra.getText() + "c");
+        }
+
+        if(e.getSource()==v.buttonxd){
+            v.pContra.setText(v.pContra.getText() + "d");
+        }
+
+        if(e.getSource()==v.buttonxe){
+            v.pContra.setText(v.pContra.getText() + "e");
+        }
+
+        if(e.getSource()==v.buttonxf){
+            v.pContra.setText(v.pContra.getText() + "f");
+        }
+
+        if(e.getSource()==v.buttonxg){
+            v.pContra.setText(v.pContra.getText() + "g");
+        }
+
+        if(e.getSource()==v.buttonxh){
+            v.pContra.setText(v.pContra.getText() + "h");
+        }
+
+        if(e.getSource()==v.buttonxi){
+            v.pContra.setText(v.pContra.getText() + "i");
+        }
+
+        if(e.getSource()==v.buttonxj){
+            v.pContra.setText(v.pContra.getText() + "j");
+        }
+
+        if(e.getSource()==v.buttonxk){
+            v.pContra.setText(v.pContra.getText() + "k");
+        }
+
+        if(e.getSource()==v.buttonxl){
+            v.pContra.setText(v.pContra.getText() + "l");
+        }
+
+        if(e.getSource()==v.buttonxm){
+            v.pContra.setText(v.pContra.getText() + "m");
+        }
+
+        if(e.getSource()==v.buttonxn){
+            v.pContra.setText(v.pContra.getText() + "n");
+        }
+
+        if(e.getSource()==v.buttonxñ){
+            v.pContra.setText(v.pContra.getText() + "ñ");
+        }
+
+        if(e.getSource()==v.buttonxo){
+            v.pContra.setText(v.pContra.getText() + "o");
+        }
+
+        if(e.getSource()==v.buttonxp){
+            v.pContra.setText(v.pContra.getText() + "p");
+        }
+
+        if(e.getSource()==v.buttonxq){
+            v.pContra.setText(v.pContra.getText() + "q");
+        }
+
+        if(e.getSource()==v.buttonxr){
+            v.pContra.setText(v.pContra.getText() + "r");
+        }
+
+        if(e.getSource()==v.buttonxs){
+            v.pContra.setText(v.pContra.getText() + "s");
+        }
+
+        if(e.getSource()==v.buttonxt){
+            v.pContra.setText(v.pContra.getText() + "t");
+        }
+
+        if(e.getSource()==v.buttonxu){
+            v.pContra.setText(v.pContra.getText() + "u");
+        }
+
+        if(e.getSource()==v.buttonxv){
+            v.pContra.setText(v.pContra.getText() + "v");
+        }
+
+        if(e.getSource()==v.buttonxw){
+            v.pContra.setText(v.pContra.getText() + "w");
+        }
+
+        if(e.getSource()==v.buttonxx){
+            v.pContra.setText(v.pContra.getText() + "x");
+        }
          
-       
-        
-        /*
+        if(e.getSource()==v.buttonxy){
+            v.pContra.setText(v.pContra.getText() + "y");
+        }
+
+        if(e.getSource()==v.buttonxz){
+            v.pContra.setText(v.pContra.getText() + "z");
+        }
+
         if(e.getSource()==v.buttonxA){
-            v.passwordText.setText(v.passwordText.getText() + "a");
+            v.pContra.setText(v.pContra.getText() + "A");
         }
          
         if(e.getSource()==v.buttonxB){
             
-            v.passwordText.setText(v.passwordText.getText() + "b");
+            v.pContra.setText(v.pContra.getText() + "B");
         }
         if(e.getSource()==v.buttonxC){
             
-            v.passwordText.setText(v.passwordText.getText() + "c");
+            v.pContra.setText(v.pContra.getText() + "C");
         }
         if(e.getSource()==v.buttonxD){
             
-            v.passwordText.setText(v.passwordText.getText() + "d");
+            v.pContra.setText(v.pContra.getText() + "D");
         }
         if(e.getSource()==v.buttonxE){
             
-            v.passwordText.setText(v.passwordText.getText() + "e");
+            v.pContra.setText(v.pContra.getText() + "E");
         }
         if(e.getSource()==v.buttonxF){
             
-            v.passwordText.setText(v.passwordText.getText() + "f");
+            v.pContra.setText(v.pContra.getText() + "F");
         }
         if(e.getSource()==v.buttonxG){
             
-            v.passwordText.setText(v.passwordText.getText() + "g");
+            v.pContra.setText(v.pContra.getText() + "G");
         }
         if(e.getSource()==v.buttonxH){
             
-            v.passwordText.setText(v.passwordText.getText() + "h");
+            v.pContra.setText(v.pContra.getText() + "H");
         }
         if(e.getSource()==v.buttonxI){
             
-            v.passwordText.setText(v.passwordText.getText() + "i");
+            v.pContra.setText(v.pContra.getText() + "I");
         }
         if(e.getSource()==v.buttonxJ){
             
-            v.passwordText.setText(v.passwordText.getText() + "j");
+            v.pContra.setText(v.pContra.getText() + "J");
         }
         if(e.getSource()==v.buttonxK){
             
-            v.passwordText.setText(v.passwordText.getText() + "k");
+            v.pContra.setText(v.pContra.getText() + "K");
         }
         if(e.getSource()==v.buttonxL){
             
-            v.passwordText.setText(v.passwordText.getText() + "l");
+            v.pContra.setText(v.pContra.getText() + "L");
         }
         if(e.getSource()==v.buttonxM){
             
-            v.passwordText.setText(v.passwordText.getText() + "m");
+            v.pContra.setText(v.pContra.getText() + "M");
         }
         if(e.getSource()==v.buttonxN){
             
-            v.passwordText.setText(v.passwordText.getText() + "n");
+            v.pContra.setText(v.pContra.getText() + "N");
         }
         if(e.getSource()==v.buttonxÑ){
             
-            v.passwordText.setText(v.passwordText.getText() + "ñ");
+            v.pContra.setText(v.pContra.getText() + "Ñ");
         }
         if(e.getSource()==v.buttonxO){
             
-            v.passwordText.setText(v.passwordText.getText() + "o");
+            v.pContra.setText(v.pContra.getText() + "O");
         }
         if(e.getSource()==v.buttonxP){
             
-            v.passwordText.setText(v.passwordText.getText() + "p");
+            v.pContra.setText(v.pContra.getText() + "P");
         }
         if(e.getSource()==v.buttonxQ){
             
-            v.passwordText.setText(v.passwordText.getText() + "q");
+            v.pContra.setText(v.pContra.getText() + "Q");
         }
         if(e.getSource()==v.buttonxR){
             
-            v.passwordText.setText(v.passwordText.getText() + "r");
+            v.pContra.setText(v.pContra.getText() + "R");
         }
         if(e.getSource()==v.buttonxS){
             
-            v.passwordText.setText(v.passwordText.getText() + "s");
+            v.pContra.setText(v.pContra.getText() + "S");
         }
         if(e.getSource()==v.buttonxT){
             
-            v.passwordText.setText(v.passwordText.getText() + "t");
+            v.pContra.setText(v.pContra.getText() + "T");
         }
         if(e.getSource()==v.buttonxU){
             
-            v.passwordText.setText(v.passwordText.getText() + "u");
+            v.pContra.setText(v.pContra.getText() + "U");
         }
         if(e.getSource()==v.buttonxV){
             
-            v.passwordText.setText(v.passwordText.getText() + "v");
+            v.pContra.setText(v.pContra.getText() + "V");
         }
         if(e.getSource()==v.buttonxW){
             
-            v.passwordText.setText(v.passwordText.getText() + "w");
+            v.pContra.setText(v.pContra.getText() + "W");
         }
         if(e.getSource()==v.buttonxX){
             
-            v.passwordText.setText(v.passwordText.getText() + "x");
+            v.pContra.setText(v.pContra.getText() + "X");
         }
         if(e.getSource()==v.buttonxY){
             
-            v.passwordText.setText(v.passwordText.getText() + "y");
+            v.pContra.setText(v.pContra.getText() + "Y");
         }
         if(e.getSource()==v.buttonxZ){
             
-            v.passwordText.setText(v.passwordText.getText() + "y");
+            v.pContra.setText(v.pContra.getText() + "Z");
         }
         
        
         
-        
+        /*
         
        
         

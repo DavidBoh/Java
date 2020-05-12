@@ -17,8 +17,6 @@ import javax.swing.JPasswordField;
 import javax.swing.JTextField;
 import text.TextPrompt;
 
-//import java.awt.SystemColor.text.TextPrompt;
-
 /**
  *
  * @author Christian
@@ -31,9 +29,11 @@ public class VentanaRegistro extends JFrame {
     private TextPrompt nombre, apellido, identificacion, correo, contraseña;    
     public JPasswordField pContra;
     private Color colorFuente, tFondo;
-    public JButton botonRegistrar, botonCerrar,goback;    
+    public JButton botonRegistrar, botonCerrar;    
     public JComboBox JCombotipoIdentificacion;
 
+    public JButton regresarx;
+    
     public VentanaRegistro() {
 
         setSize(310, 546);
@@ -54,7 +54,7 @@ public class VentanaRegistro extends JFrame {
 
         fondo = new JLabel();
         fondo.setOpaque(true);
-        fondo.setIcon(new ImageIcon(getClass().getResource("/Imagenes/RegistrarUsuario.jpg")));
+        fondo.setIcon(new ImageIcon(getClass().getResource("/Imagenes/RegistrarUsuario.jpeg")));
         fondo.setBackground(new Color(72, 181, 232));
 
         tNombre = new JTextField();
@@ -90,18 +90,12 @@ public class VentanaRegistro extends JFrame {
         pContra.setOpaque(false);
         pContra.setBorder(null);
         tCorreo.setForeground(colorFuente);
-        contraseña = new TextPrompt("Contraseña", pContra);
+        contraseña = new TextPrompt("Contraseña", pContra);        
         
         JCombotipoIdentificacion = new JComboBox(tipoIdentificacion);          
         JCombotipoIdentificacion.setBackground(tFondo);
         JCombotipoIdentificacion.setBorder(null);
         JCombotipoIdentificacion.setForeground(colorFuente);
-        
-        goback = new JButton(new ImageIcon(getClass().getResource("/Imagenes/goback.png")));
-        goback.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/goback_g.png")));       
-        goback.setContentAreaFilled(false);
-        goback.setBorder(null);
-        goback.setCursor(new Cursor(HAND_CURSOR));
         
         botonRegistrar = new JButton(new ImageIcon(getClass().getResource("/Imagenes/boton.png")));
         botonRegistrar.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/boton_g.png")));       
@@ -114,15 +108,18 @@ public class VentanaRegistro extends JFrame {
         botonCerrar.setContentAreaFilled(false);
         botonCerrar.setBorder(null);
         botonCerrar.setCursor(new Cursor(HAND_CURSOR));
+        
+        regresarx = new JButton(new ImageIcon(getClass().getResource("/Imagenes/goback.png")));
+        regresarx.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/goback_g.png")));
+        regresarx.setContentAreaFilled(false);
+        regresarx.setBorder(null);
+        regresarx.setCursor(new Cursor(HAND_CURSOR));
     }
 
     private void localizar(){
-        
         setLayout(null);
 
         fondo.setBounds(0, 0, 310, 546);
-        
-        goback.setBounds(20,20,47,47);
 
         tNombre.setBounds(65, 228, 180, 30);
         tApellido.setBounds(65, 276, 180, 30);        
@@ -130,10 +127,12 @@ public class VentanaRegistro extends JFrame {
         pContra.setBounds(65, 420, 180, 30);
         
         tIdentificacion.setBounds(120, 324, 125, 30);
-        JCombotipoIdentificacion.setBounds(65,324,41,30);
+        JCombotipoIdentificacion.setBounds(65,324,46,30);
+        
+        regresarx.setBounds(20,20,47,47);
 
         botonRegistrar.setBounds(129, 465, 47, 47);
-        botonCerrar.setBounds(270, 10, 25, 25);
+        botonCerrar.setBounds(270, 5, 25, 25);
     }
 
     private void agregar() {
@@ -142,11 +141,9 @@ public class VentanaRegistro extends JFrame {
         add(tApellido);
         add(tCorreo);
         
-        add(goback);
-        
         add(JCombotipoIdentificacion);
         add(tIdentificacion);
-        
+        add(regresarx);
         add(pContra);
 
         add(botonRegistrar);
