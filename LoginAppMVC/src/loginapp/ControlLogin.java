@@ -11,10 +11,14 @@ import Vista.VentanaRegistro;
 import restablecimiento.vistarestablecimiento;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
-import javax.swing.event.CaretEvent;
-import javax.swing.event.CaretListener;
+import javax.swing.JOptionPane;
 import menuprincipal.vistamenuprincipal;
 import menuprincipal.controlmenuprincipal;
 import restablecimiento.controlrestablecimiento;
@@ -137,20 +141,9 @@ public class ControlLogin implements ActionListener {
     public void actionPerformed(ActionEvent e) {
            
               
-        v.tIdentificacion.addCaretListener(new CaretListener(){
-                @Override
-                public void caretUpdate(CaretEvent e){
-                System.out.println("carettriggered");
-                }
-
-            }
-        );
-
+       
         
-            if(e.getSource()==v.buttonx1){
-                
-                
-            }
+           
         
               
          /*
@@ -289,12 +282,7 @@ public class ControlLogin implements ActionListener {
             
         }
         
-        if(e.getSource()==v.buttonxok){
-            v.dispose();
-            
-            vistamenuprincipal mainmenu = new vistamenuprincipal();
-            controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu);
-        }
+       
         
         if(e.getSource()==v.restablecer){
             v.dispose();
@@ -462,11 +450,11 @@ public class ControlLogin implements ActionListener {
         if(e.getSource()==v.botonCerrar){
             System.exit(0);
         }
-/*
+
         if(e.getSource()==v.buttonx1){
             v.pContra.setText(v.pContra.getText() + "1");
         }
-        */
+        
         if(e.getSource()==v.buttonx2){
             v.pContra.setText(v.pContra.getText() + "2");
         }
@@ -991,31 +979,33 @@ public class ControlLogin implements ActionListener {
         
         
         
-        /*
+        */
         
        
         
-        if(e.getSource() == v.buttonxok || e.getSource() == v.button){
+        if(e.getSource() == v.buttonxok){
         
             PreparedStatement st;
             ResultSet rs;
 
-            final String username = v.userText.getText();
-            final String password = String.valueOf(v.passwordText.getPassword());
-            final String query = "SELECT * FROM `usuarios` WHERE `username` = ? AND `password` = ?";
+            final String Identificacion = v.tIdentificacion.getText();
+            final String Contraseña = String.valueOf(v.pContra.getPassword());
+            final String query = "SELECT * FROM `Usuario` WHERE `Identificacion` = ? AND `Contraseña` = ?";
 
             try {
             
                 st = ModeloLogin.getConnection().prepareStatement(query);
 
-                st.setString(1, username);
-                st.setString(2, password);
+                st.setString(1, Identificacion);
+                st.setString(2, Contraseña);
 
                 rs = st.executeQuery();
             
                 if(rs.next())
                 {
                      // aqui va el llamado a la ventana principal
+                     vistamenuprincipal mainmenu = new vistamenuprincipal();
+                     controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu); 
                      System.out.println("conexion exitosa");
                                     
                 }else{
@@ -1027,13 +1017,13 @@ public class ControlLogin implements ActionListener {
             }
         }
 
-*/
+
         
     }
     
       private void limiteCaracteres(VistaLogin v) {
        limitadores.add(new limitadorCaracteres(v.tIdentificacion, 10));
-       limitadores.add(new limitadorCaracteres(v.pContra, 10));
+       limitadores.add(new limitadorCaracteres(v.pContra, 20));
     }
     
     

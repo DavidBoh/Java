@@ -151,6 +151,7 @@ public class vistaretiro extends JFrame {
         valorretiro.setOpaque(false);
         valorretiro.setBorder(null);
         valorretiroT = new TextPrompt("Monto a retirar", valorretiro); 
+        valorretiro.setEditable(false);
         
         
     }
@@ -162,6 +163,7 @@ public class vistaretiro extends JFrame {
         fondo.setBounds(0,0,310,546);
         
         valorretiro.setBounds(109, 214, 125, 30);
+        
         
         cerrarventanax.setBounds(270, 10, 25, 25);
         

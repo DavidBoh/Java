@@ -22,7 +22,7 @@ public class BDRegistro {
     //ruta de la base de datos
     private String url = "jdbc:mysql://localhost:3306/dineroe";
     private String username = "root";
-    private String password = "salve3587.";
+    private String password = "salve3587..";
     private Connection connect;
 
     public void conectar() {

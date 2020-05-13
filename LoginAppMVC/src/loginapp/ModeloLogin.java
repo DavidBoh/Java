@@ -10,6 +10,11 @@ import java.sql.Connection;
 import java.sql.SQLException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.sql.CallableStatement;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 /**
  *
@@ -19,9 +24,9 @@ public class ModeloLogin {
     
     private static String servername = "localhost";
     private static String username = "root";
-    private static String dbname = "usuarios_db";
+    private static String dbname = "dineroe";
     private static Integer portnumber = 3306;
-    private static String password = "salve3587.";
+    private static String password = "salve3587..";
     
     public static Connection getConnection()
     {

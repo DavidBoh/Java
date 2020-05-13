@@ -9,6 +9,7 @@ import confirmarretiro.confirmaControl;
 import confirmarretiro.confirmaVista;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.ArrayList;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import menuprincipal.controlmenuprincipal;
 import menuprincipal.vistamenuprincipal;
@@ -21,6 +22,7 @@ public class controlretiro implements ActionListener {
     
     
     vistaretiro v;
+    private ArrayList<retiro.limitadorCaracteres> limitadores = new ArrayList<retiro.limitadorCaracteres>();
     
     public controlretiro(vistaretiro vis){
         v = vis;
@@ -119,6 +121,11 @@ public class controlretiro implements ActionListener {
             confirmaControl confirmac = new confirmaControl(confirmavis);
         }
         
+    }
+    
+    private void limiteCaracteres(vistaretiro v) {
+       limitadores.add(new limitadorCaracteres(v.valorretiro, 10));
+       
     }
     
 }

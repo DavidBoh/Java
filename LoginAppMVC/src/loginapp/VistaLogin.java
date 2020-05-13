@@ -26,7 +26,7 @@ import text.TextPrompt;
 public class VistaLogin extends JFrame{
     
   
-    public JTextField userText, tIdentificacion;
+    public JTextField tIdentificacion;
 
     
     public JPasswordField pContra;
@@ -134,7 +134,7 @@ public class VistaLogin extends JFrame{
         fondo.setIcon(new ImageIcon(getClass().getResource("/Imagenes/LOGIN.jpg")));
         fondo.setBackground(new Color(72, 181, 232));
         
-        userText = new JTextField(20);
+        
   
         tIdentificacion = new JTextField(11);
         tIdentificacion.setBackground(tFondo);
