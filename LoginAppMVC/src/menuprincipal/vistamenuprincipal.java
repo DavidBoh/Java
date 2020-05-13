@@ -5,12 +5,16 @@
  */
 package menuprincipal;
 
+import java.awt.Color;
 import java.awt.Cursor;
 import static java.awt.Frame.HAND_CURSOR;
+import java.awt.Insets;
+import javax.swing.BorderFactory;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.border.Border;
 
 /**
  *
@@ -45,40 +49,44 @@ public class vistamenuprincipal extends JFrame {
         fondo.setOpaque(true);
         fondo.setIcon(new ImageIcon(getClass().getResource("/Imagenes/MAINMENU.jpg")));
         
+        
+        
         cerrarventanax = new JButton(new ImageIcon(getClass().getResource("/Imagenes/cerrar.png")));
         cerrarventanax.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/cerrar_g.png")));
         cerrarventanax.setContentAreaFilled(false);
         cerrarventanax.setBorder(null);
         cerrarventanax.setCursor(new Cursor(HAND_CURSOR));
         
-        depositarx = new JButton(new ImageIcon(getClass().getResource("/Imagenes/depositasmall.png")));
-        depositarx.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/depositabig.png")));
+        depositarx = new JButton(new ImageIcon(getClass().getResource("/Imagenes/DEPOSITA.png")));
+        depositarx.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/DEPOSITA_b.png")));
         depositarx.setContentAreaFilled(false);
         depositarx.setBorder(null);
         depositarx.setCursor(new Cursor(HAND_CURSOR));
         
-        retirarx = new JButton(new ImageIcon(getClass().getResource("/Imagenes/retirasmall.png")));
-        retirarx.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/retirabig.png")));
+        retirarx = new JButton(new ImageIcon(getClass().getResource("/Imagenes/RETIRA.png")));
+        retirarx.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/RETIRA_b.png")));
         retirarx.setContentAreaFilled(false);
         retirarx.setBorder(null);
         retirarx.setCursor(new Cursor(HAND_CURSOR));
         
-        cerrarsesionx = new JButton(new ImageIcon(getClass().getResource("/Imagenes/CIERRASESIONSMALL.png")));
-        cerrarsesionx.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/CIERRASESION.png")));
-        cerrarsesionx.setContentAreaFilled(false);
+        cerrarsesionx = new JButton(new ImageIcon(getClass().getResource("/Imagenes/LOGOUT.png")));
+        cerrarsesionx.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/LOGOUT_b.png")));
         cerrarsesionx.setBorder(null);
+        cerrarsesionx.setContentAreaFilled(false);
         cerrarsesionx.setCursor(new Cursor(HAND_CURSOR));
         
-        aprende = new JButton(new ImageIcon(getClass().getResource("/Imagenes/APRENDEAMANEJARSMALL.png")));
-        aprende.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/APRENDEAMANEJAR.png")));
+        aprende = new JButton(new ImageIcon(getClass().getResource("/Imagenes/APRENDE.png")));
+        aprende.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/APRENDE_b.png")));
         aprende.setContentAreaFilled(false);
         aprende.setBorder(null);
-        aprende.setCursor(new Cursor(HAND_CURSOR));
+        aprende.setCursor(new Cursor(HAND_CURSOR));  
         
     }
     
     private void localizar(){
+        
         setLayout(null);
+        
         
         fondo.setBounds(0,0,310,546);
         
@@ -89,6 +97,8 @@ public class vistamenuprincipal extends JFrame {
         
         cerrarsesionx.setBounds(45,410,100,100);
         aprende.setBounds(175,410,100,100);
+        
+           
         
         
     }
