@@ -5,6 +5,8 @@
  */
 package retiro;
 
+import confirmarretiro.confirmaControl;
+import confirmarretiro.confirmaVista;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
@@ -28,6 +30,21 @@ public class controlretiro implements ActionListener {
         v.aceptar.addActionListener(this);
         v.valorretiro.addActionListener(this);
         
+        v.buttonx1.addActionListener(this);
+        v.buttonx2.addActionListener(this);
+        v.buttonx3.addActionListener(this);
+        
+        v.buttonx4.addActionListener(this);
+        v.buttonx5.addActionListener(this);
+        v.buttonx6.addActionListener(this);
+         
+        v.buttonx7.addActionListener(this);
+        v.buttonx8.addActionListener(this);
+        v.buttonx9.addActionListener(this);
+        v.buttonx0.addActionListener(this);
+        v.buttonxcancel.addActionListener(this);
+        
+        
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
     }
     
@@ -49,6 +66,57 @@ public class controlretiro implements ActionListener {
             controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu);        
             
             
+        }
+        
+        if(e.getSource()==v.buttonx1){
+            v.valorretiro.setText(v.valorretiro.getText() + "1");
+        }
+        
+        if(e.getSource()==v.buttonx2){
+            v.valorretiro.setText(v.valorretiro.getText() + "2");
+        }
+        
+        if(e.getSource()==v.buttonx3){
+            v.valorretiro.setText(v.valorretiro.getText() + "3");
+        }
+        
+        if(e.getSource()==v.buttonx4){
+            v.valorretiro.setText(v.valorretiro.getText() + "4");
+        }
+        
+        if(e.getSource()==v.buttonx5){
+            v.valorretiro.setText(v.valorretiro.getText() + "5");
+        }
+        
+        if(e.getSource()==v.buttonx6){
+            v.valorretiro.setText(v.valorretiro.getText() + "6");
+        }
+        
+        if(e.getSource()==v.buttonx7){
+            v.valorretiro.setText(v.valorretiro.getText() + "7");
+        }
+        
+        if(e.getSource()==v.buttonx8){
+            v.valorretiro.setText(v.valorretiro.getText() + "8");
+        }
+        
+        if(e.getSource()==v.buttonx9){
+            v.valorretiro.setText(v.valorretiro.getText() + "9");
+        }
+        
+        if(e.getSource()==v.buttonx0){
+            v.valorretiro.setText(v.valorretiro.getText() + "0");
+        }
+        
+        if(e.getSource()==v.buttonxcancel){
+            v.valorretiro.setText(null);
+        }
+        
+        if(e.getSource() == v.aceptar){
+            v.dispose();
+            
+            confirmaVista  confirmavis = new confirmaVista();
+            confirmaControl confirmac = new confirmaControl(confirmavis);
         }
         
     }

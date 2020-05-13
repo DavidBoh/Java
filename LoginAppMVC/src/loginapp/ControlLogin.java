@@ -11,10 +11,7 @@ import Vista.VentanaRegistro;
 import restablecimiento.vistarestablecimiento;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.event.MouseEvent;
-import java.awt.event.MouseListener;
+import java.util.ArrayList;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import javax.swing.event.CaretEvent;
 import javax.swing.event.CaretListener;
@@ -33,15 +30,8 @@ public class ControlLogin implements ActionListener {
     
     VistaLogin v;
     ModeloLogin m;
-  
-     void mouseEvents(){
-        
-        
-         
-    }
-     
-   
-    
+    private ArrayList<limitadorCaracteres> limitadores = new ArrayList<limitadorCaracteres>();
+       
     public ControlLogin(ModeloLogin mod, VistaLogin vis){
         v=vis;
         m=mod;
@@ -133,7 +123,7 @@ public class ControlLogin implements ActionListener {
         v.setVisible(true);
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
         
-        
+        limiteCaracteres(v);
         
     }
     
@@ -1039,6 +1029,11 @@ public class ControlLogin implements ActionListener {
 
 */
         
+    }
+    
+      private void limiteCaracteres(VistaLogin v) {
+       limitadores.add(new limitadorCaracteres(v.tIdentificacion, 10));
+       limitadores.add(new limitadorCaracteres(v.pContra, 10));
     }
     
     
