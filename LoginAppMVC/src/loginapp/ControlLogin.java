@@ -11,7 +11,13 @@ import Vista.VentanaRegistro;
 import restablecimiento.vistarestablecimiento;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.FocusEvent;
+import java.awt.event.FocusListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import javax.swing.event.CaretEvent;
+import javax.swing.event.CaretListener;
 import menuprincipal.vistamenuprincipal;
 import menuprincipal.controlmenuprincipal;
 import restablecimiento.controlrestablecimiento;
@@ -21,17 +27,25 @@ import restablecimiento.controlrestablecimiento;
  *
  * @author herrboh
  */
+
+
 public class ControlLogin implements ActionListener {
     
     VistaLogin v;
     ModeloLogin m;
-    
-    
+  
+     void mouseEvents(){
+        
+        
+         
+    }
+     
+   
     
     public ControlLogin(ModeloLogin mod, VistaLogin vis){
         v=vis;
         m=mod;
-              
+        
         v.buttonx1.addActionListener(this);
         v.buttonx2.addActionListener(this);
         v.buttonx3.addActionListener(this);
@@ -106,8 +120,12 @@ public class ControlLogin implements ActionListener {
         v.buttonxm.addActionListener(this);
         v.mayus.addActionListener(this);
         v.minus.addActionListener(this);
-        v.pContra.addActionListener(this);
+        
+       
+        
         v.tIdentificacion.addActionListener(this);
+        
+        
         
         v.usuarionuevo.addActionListener(this);
         v.restablecer.addActionListener(this);
@@ -115,14 +133,58 @@ public class ControlLogin implements ActionListener {
         v.setVisible(true);
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
         
+        
+        
     }
+    
+  
+   
+    
     
     
 
     @Override
     public void actionPerformed(ActionEvent e) {
+           
+              
+        v.tIdentificacion.addCaretListener(new CaretListener(){
+                @Override
+                public void caretUpdate(CaretEvent e){
+                System.out.println("carettriggered");
+                }
+
+            }
+        );
+
         
-        System.out.println("Button Clicked");
+            if(e.getSource()==v.buttonx1){
+                
+                
+            }
+        
+              
+         /*
+            v.pContra.addFocusListener(new FocusListener() {
+
+                @Override
+                public void focusGained(FocusEvent e) {
+                    //v.pContra.setText(null); // Empty the text field when it receives focus
+                    System.out.println("tfdude");
+                    v.pContra.setText(v.pContra.getText() + "1");
+                    
+                }
+
+                @Override
+                public void focusLost(FocusEvent e) {
+                    //System.out.println("tfdude");
+                    //v.pContra.setText(v.pContra.getText() + "1");
+                }
+
+           });
+        
+                        
+      */
+        //System.out.println("Button Clicked");
         
         
         if(e.getSource()==v.buttonxABC){
@@ -410,66 +472,11 @@ public class ControlLogin implements ActionListener {
         if(e.getSource()==v.botonCerrar){
             System.exit(0);
         }
-        
-        /*
-        if(v.pContra.isCursorSet()){
-            v.tIdentificacion.setEditable(false);
-            
-            
-            if(!v.tIdentificacion.isEditable()){
-                
-                if(e.getSource()==v.buttonx1){
-                    v.pContra.setText(v.pContra.getText() + "1");
-                }
-                
-            }
-            
-            
-        }
-        
-         v.pContra.addMouseListener((MouseListener) this);
-         if(v.pContra.isCursorSet()){
-             //v.tIdentificacion.setEnabled(false);
-             System.out.println("jjaaja");
-           
-            if(e.getSource()==v.buttonx1){
-                 v.pContra.setText(v.pContra.getText() + "1");
-            }
-         
-         }
-            
-            
-        
-        
-        if(v.tIdentificacion.isEditable()){
-           // v.pContra.setEnabled(false);
-                
-                if(e.getSource()==v.buttonx1){
-                    v.tIdentificacion.setText(v.tIdentificacion.getText() + "1");
-                }        
-        }
-        
-        /*
-        if(e.getSource()==v.pContra && v.buttonx1.hasFocus()){
-            
-                
-                    v.pContra.setText(v.pContra.getText() + "1");
-                
-                
-        }
-        
-        
-        if(e.getSource()==v.buttonx1){
-                if (v.pContra.isFocusOwner()){
-                    v.pContra.setText(v.pContra.getText() + "1");
-                }
-        }
-            
-        */
+/*
         if(e.getSource()==v.buttonx1){
             v.pContra.setText(v.pContra.getText() + "1");
         }
-        
+        */
         if(e.getSource()==v.buttonx2){
             v.pContra.setText(v.pContra.getText() + "2");
         }
@@ -727,7 +734,272 @@ public class ControlLogin implements ActionListener {
             v.pContra.setText(v.pContra.getText() + "Z");
         }
         
+       /*
+        
+        if(e.getSource()==v.buttonx1){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "1");
+        }
+        
+        if(e.getSource()==v.buttonx2){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "2");
+        }
+        
+        if(e.getSource()==v.buttonx3){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "3");
+        }
+        
+        if(e.getSource()==v.buttonx4){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "4");
+        }
+        
+        if(e.getSource()==v.buttonx5){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "5");
+        }
+        
+        if(e.getSource()==v.buttonx6){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "6");
+        }
+        
+        if(e.getSource()==v.buttonx7){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "7");
+        }
+        
+        if(e.getSource()==v.buttonx8){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "8");
+        }
+        
+        if(e.getSource()==v.buttonx9){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "9");
+        }
+        
+        if(e.getSource()==v.buttonx0){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "0");
+        }
+        
+        if(e.getSource()==v.buttonxcancel){
+            v.tIdentificacion.setText(null);
+        }
+        
+        if(e.getSource()==v.buttonxa){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "a");
+        }
+
+        if(e.getSource()==v.buttonxb){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "b");
+        }
+
+        if(e.getSource()==v.buttonxc){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "c");
+        }
+
+        if(e.getSource()==v.buttonxd){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "d");
+        }
+
+        if(e.getSource()==v.buttonxe){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "e");
+        }
+
+        if(e.getSource()==v.buttonxf){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "f");
+        }
+
+        if(e.getSource()==v.buttonxg){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "g");
+        }
+
+        if(e.getSource()==v.buttonxh){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "h");
+        }
+
+        if(e.getSource()==v.buttonxi){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "i");
+        }
+
+        if(e.getSource()==v.buttonxj){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "j");
+        }
+
+        if(e.getSource()==v.buttonxk){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "k");
+        }
+
+        if(e.getSource()==v.buttonxl){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "l");
+        }
+
+        if(e.getSource()==v.buttonxm){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "m");
+        }
+
+        if(e.getSource()==v.buttonxn){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "n");
+        }
+
+        if(e.getSource()==v.buttonxñ){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "ñ");
+        }
+
+        if(e.getSource()==v.buttonxo){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "o");
+        }
+
+        if(e.getSource()==v.buttonxp){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "p");
+        }
+
+        if(e.getSource()==v.buttonxq){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "q");
+        }
+
+        if(e.getSource()==v.buttonxr){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "r");
+        }
+
+        if(e.getSource()==v.buttonxs){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "s");
+        }
+
+        if(e.getSource()==v.buttonxt){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "t");
+        }
+
+        if(e.getSource()==v.buttonxu){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "u");
+        }
+
+        if(e.getSource()==v.buttonxv){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "v");
+        }
+
+        if(e.getSource()==v.buttonxw){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "w");
+        }
+
+        if(e.getSource()==v.buttonxx){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "x");
+        }
+         
+        if(e.getSource()==v.buttonxy){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "y");
+        }
+
+        if(e.getSource()==v.buttonxz){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "z");
+        }
+
+        if(e.getSource()==v.buttonxA){
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "A");
+        }
+         
+        if(e.getSource()==v.buttonxB){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "B");
+        }
+        if(e.getSource()==v.buttonxC){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "C");
+        }
+        if(e.getSource()==v.buttonxD){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "D");
+        }
+        if(e.getSource()==v.buttonxE){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "E");
+        }
+        if(e.getSource()==v.buttonxF){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "F");
+        }
+        if(e.getSource()==v.buttonxG){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "G");
+        }
+        if(e.getSource()==v.buttonxH){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "H");
+        }
+        if(e.getSource()==v.buttonxI){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "I");
+        }
+        if(e.getSource()==v.buttonxJ){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "J");
+        }
+        if(e.getSource()==v.buttonxK){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "K");
+        }
+        if(e.getSource()==v.buttonxL){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "L");
+        }
+        if(e.getSource()==v.buttonxM){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "M");
+        }
+        if(e.getSource()==v.buttonxN){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "N");
+        }
+        if(e.getSource()==v.buttonxÑ){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "Ñ");
+        }
+        if(e.getSource()==v.buttonxO){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "O");
+        }
+        if(e.getSource()==v.buttonxP){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "P");
+        }
+        if(e.getSource()==v.buttonxQ){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "Q");
+        }
+        if(e.getSource()==v.buttonxR){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "R");
+        }
+        if(e.getSource()==v.buttonxS){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "S");
+        }
+        if(e.getSource()==v.buttonxT){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "T");
+        }
+        if(e.getSource()==v.buttonxU){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "U");
+        }
+        if(e.getSource()==v.buttonxV){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "V");
+        }
+        if(e.getSource()==v.buttonxW){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "W");
+        }
+        if(e.getSource()==v.buttonxX){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "X");
+        }
+        if(e.getSource()==v.buttonxY){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "Y");
+        }
+        if(e.getSource()==v.buttonxZ){
+            
+            v.tIdentificacion.setText(v.tIdentificacion.getText() + "Z");
+        }
+        
        
+        
+        
         
         /*
         
@@ -768,6 +1040,8 @@ public class ControlLogin implements ActionListener {
 */
         
     }
+    
+    
     
 }
     
