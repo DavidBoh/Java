@@ -10,6 +10,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import com.mysql.jdbc.jdbc2.optional.MysqlDataSource;
 
 import javax.swing.JOptionPane;
 
@@ -49,7 +50,7 @@ public class BDRegistro {
             int tipoIdentificacion,
             String nombreUsuario,
             String apellidoUsuario,
-            String identificacion,
+            int identificacion,
             String correo,
             String contraseña) {
         int estado;
@@ -59,19 +60,19 @@ public class BDRegistro {
             st.setInt(1, tipoIdentificacion);
             st.setString(2, nombreUsuario);
             st.setString(3, apellidoUsuario);
-            st.setString(4, identificacion);
+            st.setInt(4, identificacion);
             st.setString(5, correo);
             st.setString(6, contraseña);
             st.execute();
             estado = 1;
         } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "Error Almacenando los Datos");
+            JOptionPane.showMessageDialog(null, "Error al crear usuario");
             estado = 0;
         }
         return estado;
     }
 
-    public boolean ValidarU(String usuario, String contrasena) {
+    public boolean ValidarU(int usuario, String contrasena) {
         boolean resultado = false;
         String campoDB;
         ResultSet result;
@@ -79,11 +80,11 @@ public class BDRegistro {
         try {
             campoDB = "call verificarUsuario(?,?);";
             CallableStatement st = connect.prepareCall(campoDB);
-            st.setString(1, usuario);
+            st.setInt(1, usuario);
             st.setString(2, contrasena);
             result = st.executeQuery();
             while (result.next()) {
-                if (result.getString(1).equals(usuario) && result.getString(2).equals(contrasena)) {
+                if (result.getString(1).equals(usuario) && result.getString(2).equals(contrasena)) {/**/
                     resultado = true;
                 }
             }
@@ -93,15 +94,15 @@ public class BDRegistro {
         return resultado;
     }
 
-    public boolean confirmarU(String u) {
+    public boolean confirmarU(int u) {
         boolean resultado = true;
         ResultSet result;
         try {
             CallableStatement st = connect.prepareCall("call consultarUsuario(?);");
-            st.setString(1, u);
+            st.setInt(1, u);
             result = st.executeQuery();
             while (result.next()) {
-                if (result.getString(1).equals(u)) {
+                if (result.getInt(1)>0) {
                     resultado = false;
                 }
             }
@@ -110,6 +111,25 @@ public class BDRegistro {
         }
         return resultado;
     }
+   /* 
+    public boolean confirmarCorreo(String correo) {
+        boolean resultado = true;
+        ResultSet result;
+        try {
+            CallableStatement st = connect.prepareCall("call consultarCorreo(?);");
+            st.setString(1, correo);
+            result = st.executeQuery();
+            while (result.next()) {
+                if (result.getInt(1)>0) {
+                    resultado = false;
+                }
+            }
+        } catch (SQLException ex) {
+            System.err.println("Error al confirmar Correo en La BD");
+        }
+        return resultado;
+    }
+    */
 
     public Connection getConnect() {
         return connect;

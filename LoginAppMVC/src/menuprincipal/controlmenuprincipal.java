@@ -9,9 +9,12 @@ import aprender.controlaprender;
 import aprender.vistaaprender;
 import deposito.controldeposito;
 import deposito.vistadeposito;
+import historial.historialControl;
+import historial.historialVista;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
+import static javax.swing.UIManager.getString;
 import loginapp.ControlLogin;
 
 import loginapp.ModeloLogin;
@@ -26,15 +29,21 @@ import retiro.vistaretiro;
 public class controlmenuprincipal implements ActionListener {
     
     vistamenuprincipal v;
+    modelomenuprincipal m;
     
-    public controlmenuprincipal(vistamenuprincipal vis){
+    public controlmenuprincipal(vistamenuprincipal vis, modelomenuprincipal mod){
         v=vis;
+        
+        m=mod;
         
         v.cerrarventanax.addActionListener(this);
         v.depositarx.addActionListener(this);
         v.retirarx.addActionListener(this);
         v.cerrarsesionx.addActionListener(this);
         v.aprende.addActionListener(this);
+        
+       
+        v.historial.addActionListener(this);
         
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
     }
@@ -62,6 +71,14 @@ public class controlmenuprincipal implements ActionListener {
             
             vistaretiro  retirovis = new vistaretiro();
             controlretiro retiroc = new controlretiro(retirovis);
+        }
+        
+        if(e.getSource() == v.historial){
+            v.dispose();
+            
+            
+            historialVista historiavis = new historialVista();
+            historialControl historialc = new historialControl(historiavis);
         }
         
         if(e.getSource() == v.depositarx){

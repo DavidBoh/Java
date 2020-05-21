@@ -21,6 +21,7 @@ import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import javax.swing.JOptionPane;
 import menuprincipal.vistamenuprincipal;
 import menuprincipal.controlmenuprincipal;
+import menuprincipal.modelomenuprincipal;
 import restablecimiento.controlrestablecimiento;
 
 
@@ -1005,7 +1006,8 @@ public class ControlLogin implements ActionListener {
                 {
                      // aqui va el llamado a la ventana principal
                      vistamenuprincipal mainmenu = new vistamenuprincipal();
-                     controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu); 
+                     modelomenuprincipal modelmenu = new modelomenuprincipal();
+                     controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu,modelmenu); 
                      System.out.println("conexion exitosa");
                                     
                 }else{

@@ -1,0 +1,6 @@
+Marca: Samsung
+IMEI: asd
+Modelo(año): 2007
+Estado: Nuevo
+Color: Otro
+Importado por: asd

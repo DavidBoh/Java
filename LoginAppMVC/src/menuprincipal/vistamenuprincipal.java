@@ -27,7 +27,9 @@ public class vistamenuprincipal extends JFrame {
     public JButton retirarx;
     public JButton cerrarsesionx;
     public JButton aprende;
+    public JButton historial;
       
+    public JLabel saldo;
     private JLabel fondo;
     
     public vistamenuprincipal(){
@@ -49,6 +51,7 @@ public class vistamenuprincipal extends JFrame {
         fondo.setOpaque(true);
         fondo.setIcon(new ImageIcon(getClass().getResource("/Imagenes/MAINMENU.jpg")));
         
+        saldo = new JLabel();
         
         
         cerrarventanax = new JButton(new ImageIcon(getClass().getResource("/Imagenes/cerrar.png")));
@@ -81,39 +84,45 @@ public class vistamenuprincipal extends JFrame {
         aprende.setBorder(null);
         aprende.setCursor(new Cursor(HAND_CURSOR));  
         
+        historial = new JButton(new ImageIcon(getClass().getResource("/Imagenes/lupita_s.png")));
+        historial.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/lupita_s.png")));
+        historial.setContentAreaFilled(false);
+        historial.setBorder(null);
+        historial.setCursor(new Cursor(HAND_CURSOR));  
+        
     }
     
     private void localizar(){
         
         setLayout(null);
         
-        
         fondo.setBounds(0,0,310,546);
+        
+        saldo.setBounds(130,175,50,50);
         
         cerrarventanax.setBounds(270, 10, 25, 25);
         
         depositarx.setBounds(35,300,100,100);
         retirarx.setBounds(185,300,100,100);
         
+        historial.setBounds(240,190,30,30);
+        
         cerrarsesionx.setBounds(45,410,100,100);
         aprende.setBounds(175,410,100,100);
-        
-           
-        
-        
+
     }
     
     private void agregar(){
         
         add(cerrarventanax);
+        add(saldo);
         add(depositarx);
         add(retirarx);
         add(cerrarsesionx);
         add(aprende);
-        
+        add(historial);
         add(fondo);
-        
-        
+                
     }
     
     

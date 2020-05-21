@@ -12,6 +12,7 @@ import java.awt.event.ActionListener;
 import java.util.ArrayList;
 import static javax.swing.JFrame.EXIT_ON_CLOSE;
 import menuprincipal.controlmenuprincipal;
+import menuprincipal.modelomenuprincipal;
 import menuprincipal.vistamenuprincipal;
 
 /**
@@ -65,8 +66,8 @@ public class controlretiro implements ActionListener {
             v.dispose();
             
             vistamenuprincipal mainmenu = new vistamenuprincipal();
-            controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu);        
-            
+            modelomenuprincipal modelmenu = new modelomenuprincipal();
+            controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu,modelmenu); 
             
         }
         

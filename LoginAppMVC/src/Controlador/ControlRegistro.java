@@ -5,6 +5,8 @@
  */
 package Controlador;
 
+
+import Modelo.limitadorCaracteres;
 import Modelo.BDRegistro;
 import Vista.VentanaRegistro;
 import Hash.Sha;
@@ -28,18 +30,22 @@ public class ControlRegistro implements ActionListener {
     private BDRegistro bdRegistro;
     private Sha seguridad = new Sha();
     private ArrayList<limitadorCaracteres> limitadores = new ArrayList<limitadorCaracteres>();
+    
 
     public ControlRegistro(VentanaRegistro vr, BDRegistro bd) {
         this.ventanaR = vr;
         this.bdRegistro = bd;
 
         ventanaR.botonRegistrar.addActionListener(this);
-        ventanaR.botonCerrar.addActionListener(this);
+        ventanaR.botonCerrar.addActionListener(this);   
+       
         ventanaR.regresarx.addActionListener(this);
+
 
         limiteCaracteres(ventanaR);
 
     }
+
 
     @Override
     public void actionPerformed(ActionEvent ae) {
@@ -54,9 +60,10 @@ public class ControlRegistro implements ActionListener {
         }
 
         if (ae.getSource() == ventanaR.botonRegistrar) {
-            bdRegistro.conectar();
+
+            limitadores.get(3).comprobarCorreo();
             ingresarUsuario(ventanaR, bdRegistro);
-            bdRegistro.cerrar();
+       
             
         }
         if (ae.getSource() == ventanaR.botonCerrar) {
@@ -64,44 +71,58 @@ public class ControlRegistro implements ActionListener {
         }
     }
 
+    /*
+    *   Limite de caracteres en los campos de texto tomando el Componente como primer parámetro
+    *   ,el límite de caracteres que tendrá en el segundo parámetro     
+    *   y el tipo de restriccion de caracteres en el tercero
+     */
+    private void limiteCaracteres(VentanaRegistro vt) {
+        limitadores.add(new limitadorCaracteres(vt.tNombre, 10,1));
+        limitadores.add(new limitadorCaracteres(vt.tApellido, 10,1));
+        limitadores.add(new limitadorCaracteres(vt.tIdentificacion, 10,2));
+        limitadores.add(new limitadorCaracteres(vt.tCorreo, 50,3));
+        limitadores.add(new limitadorCaracteres(vt.pContra, 15,4));
+    }
+
     private void ingresarUsuario(VentanaRegistro ventana, BDRegistro datos) {
-        if (!"".equals(ventana.tIdentificacion.getText())) {
-            if (datos.confirmarU(ventana.tIdentificacion.getText())) {
-                char[] ar = ventana.pContra.getPassword();
-                StringBuilder builder = new StringBuilder();
-                for (char s : ar) {
-                    builder.append(s);
-                }
-                String str = builder.toString();
-                if (str.length() > 5) {
-                    datos.guardaDatos(
-                            ventana.JCombotipoIdentificacion.getSelectedIndex() + 1,
-                            ventana.tNombre.getText(),
-                            ventana.tApellido.getText(),
-                            ventana.tIdentificacion.getText(),
-                            ventana.tCorreo.getText(),
-                            str);
+
+        if (!ventana.tNombre.getText().isEmpty()
+                && !ventana.tApellido.getText().isEmpty()
+                && !ventana.tIdentificacion.getText().isEmpty()
+                && !ventana.tCorreo.getText().isEmpty()
+                && ventana.pContra.getPassword().length > 0) {
+            try {
+                int identificacion = Integer.parseInt(ventana.tIdentificacion.getText());
+                if (datos.confirmarU(identificacion)) {
+                    char[] ar = ventana.pContra.getPassword();
+                    StringBuilder builder = new StringBuilder();
+                    for (char s : ar) {
+                        builder.append(s);
+                    }
+                    String str = builder.toString();
+                    String clave = seguridad.get_SHA_256_SecurePassword(str);
+                    if (str.length() > 4) {
+                        bdRegistro.conectar();
+                        datos.guardaDatos(
+                                ventana.JCombotipoIdentificacion.getSelectedIndex() + 1,
+                                ventana.tNombre.getText(),
+                                ventana.tApellido.getText(),
+                                identificacion,
+                                ventana.tCorreo.getText(),
+                                clave);
+                        bdRegistro.cerrar();
+                    } else {
+                        JOptionPane.showMessageDialog(null, "Clave debe ser mayor a 4 caracteres");
+                    }
                 } else {
-                    JOptionPane.showMessageDialog(null, "Clave debe ser mayor a 5 caracteres");
-                }
-            } else {
-                JOptionPane.showMessageDialog(null, "Usuario ya Existe");
-                ventana.gettNombre().setText("");
+                    JOptionPane.showMessageDialog(null, "Usuario ya Existe");
+                    ventana.gettNombre().setText("");
+                }//Fin Comprobacion campo identificacion
+            } catch (NumberFormatException n) {
+                JOptionPane.showMessageDialog(null, "El campo identificación debe llevar sólo números");
             }
         } else {
             JOptionPane.showMessageDialog(null, "Ingrese Datos");
         }
-    }
-
-    /*
-    *   Limite de caracteres en los campos de texto tomando el Componente como primer parámetro
-    *   y el límite de caracteres que tendrá en el segundo parámetro     
-     */
-    private void limiteCaracteres(VentanaRegistro vt) {
-        limitadores.add(new limitadorCaracteres(vt.tNombre, 10));
-        limitadores.add(new limitadorCaracteres(vt.tApellido, 10));
-        limitadores.add(new limitadorCaracteres(vt.tIdentificacion, 10));
-        limitadores.add(new limitadorCaracteres(vt.tCorreo, 30));
-        limitadores.add(new limitadorCaracteres(vt.pContra, 10));
     }
 }
