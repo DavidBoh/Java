@@ -8,7 +8,6 @@ package loginapp;
 
 import java.awt.Color;
 import java.awt.Cursor;
-import java.awt.Font;
 import static java.awt.Frame.HAND_CURSOR;
 import javax.swing.ImageIcon;
 import javax.swing.JButton;

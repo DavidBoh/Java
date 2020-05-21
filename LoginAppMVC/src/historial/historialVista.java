@@ -12,10 +12,8 @@ import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
-import javax.swing.JPanel;
 import javax.swing.JScrollPane;
 import javax.swing.JTable;
-import javax.swing.JTextArea;
 import javax.swing.table.TableColumn;
 
 /**
@@ -102,17 +100,7 @@ public class historialVista extends JFrame {
         
     }
     
-    private void armartabla(){
-        for (int i = 0; i < 5; i++) {
-            column = table.getColumnModel().getColumn(i);
-            if (i == 2) {
-                 column.setPreferredWidth(100); //third column is bigger
-            } else {
-                column.setPreferredWidth(50);
-            }
-    
-        }
-    }
+  
     
     private void localizar(){
         

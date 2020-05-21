@@ -22,6 +22,7 @@ public class vistaaprender extends JFrame {
     public JButton cerrarventanax;
     public JButton aceptar;
     public JButton regresarx;
+    public JButton regresaraprender;
     
     public JButton ingresos;
     public JButton ahorros;
@@ -29,6 +30,8 @@ public class vistaaprender extends JFrame {
     public JButton pensiones;
     
     public JLabel fondo;
+    
+    public JLabel labelahorro, labelinteres, labelpension, labelpresupuesto;
     
     public vistaaprender (){
         
@@ -50,12 +53,37 @@ public class vistaaprender extends JFrame {
         fondo.setIcon(new ImageIcon(getClass().getResource("/Imagenes/APRENDE.jpg")));
         fondo.setBackground(new Color(72, 181, 232));
         
+        labelahorro = new JLabel();
+        labelahorro.setOpaque(true);
+        labelahorro.setIcon(new ImageIcon(getClass().getResource("/Imagenes/ahorrox.png")));
+        labelahorro.setBackground(new Color(72, 181, 232));
+        labelahorro.setVisible(false);
+        
+        labelinteres = new JLabel();
+        labelinteres.setOpaque(true);
+        labelinteres.setIcon(new ImageIcon(getClass().getResource("/Imagenes/interes_cx.png")));
+        labelinteres.setBackground(new Color(72, 181, 232));
+        labelinteres.setVisible(false);
+        
+        labelpension = new JLabel();
+        labelpension.setOpaque(true);
+        labelpension.setIcon(new ImageIcon(getClass().getResource("/Imagenes/pensionx.png")));
+        labelpension.setBackground(new Color(72, 181, 232));
+        labelpension.setVisible(false);
+        
+        labelpresupuesto = new JLabel();
+        labelpresupuesto.setOpaque(true);
+        labelpresupuesto.setIcon(new ImageIcon(getClass().getResource("/Imagenes/presupuestox.png")));
+        labelpresupuesto.setBackground(new Color(72, 181, 232));
+        labelpresupuesto.setVisible(false);
+        
+        
         cerrarventanax = new JButton(new ImageIcon(getClass().getResource("/Imagenes/cerrar.png")));
         cerrarventanax.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/cerrar_g.png")));
         cerrarventanax.setContentAreaFilled(false);
         cerrarventanax.setBorder(null);
         cerrarventanax.setCursor(new Cursor(HAND_CURSOR));
-        
+              
         aceptar = new JButton(new ImageIcon(getClass().getResource("/Imagenes/boton.png")));
         aceptar.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/boton_g.png")));
         aceptar.setContentAreaFilled(false);
@@ -67,6 +95,13 @@ public class vistaaprender extends JFrame {
         regresarx.setContentAreaFilled(false);
         regresarx.setBorder(null);
         regresarx.setCursor(new Cursor(HAND_CURSOR));
+        
+        regresaraprender = new JButton(new ImageIcon(getClass().getResource("/Imagenes/goback.png")));
+        regresaraprender.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/goback_g.png")));
+        regresaraprender.setContentAreaFilled(false);
+        regresaraprender.setBorder(null);
+        regresaraprender.setCursor(new Cursor(HAND_CURSOR));
+        regresaraprender.setVisible(false);
         
         ingresos = new JButton(new ImageIcon(getClass().getResource("/Imagenes/moneda.png")));
         ingresos.setRolloverIcon(new ImageIcon(getClass().getResource("/Imagenes/moneda.png")));
@@ -100,11 +135,15 @@ public class vistaaprender extends JFrame {
         
         fondo.setBounds(0,0,310,546);
         
+        labelahorro.setBounds(0,0,310,546);
+        labelinteres.setBounds(0,0,310,546);
+        labelpension.setBounds(0,0,310,546);
+        labelpresupuesto.setBounds(0,0,310,546);
+        
         cerrarventanax.setBounds(270, 10, 25, 25);
         
         regresarx.setBounds(20,20,47,47);
-        
-        //aceptar.setBounds(129, 465, 47, 47);
+        regresaraprender.setBounds(20,490,47,47);
         
         ingresos.setBounds(30,200,80,80);
         interes.setBounds(200,200,80,80);
@@ -118,6 +157,7 @@ public class vistaaprender extends JFrame {
         
         add(cerrarventanax);
         add(regresarx);
+        add(regresaraprender);
         add(aceptar);
         
         add(ingresos);
@@ -125,7 +165,14 @@ public class vistaaprender extends JFrame {
         add(interes);
         add(pensiones);
         
+        add(labelahorro);
+        add(labelinteres);
+        add(labelpension);
+        add(labelpresupuesto);
+        
+        
         add(fondo);//siempre añadirlo al final
+        
         
     }
 }

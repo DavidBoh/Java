@@ -27,6 +27,11 @@ public class controlaprender implements ActionListener {
         v.regresarx.addActionListener(this);
         v.aceptar.addActionListener(this);
         
+        v.ahorros.addActionListener(this);
+        v.ingresos.addActionListener(this);
+        v.pensiones.addActionListener(this);
+        v.interes.addActionListener(this);
+        v.regresaraprender.addActionListener(this);
         
         v.setDefaultCloseOperation(EXIT_ON_CLOSE); 
     }
@@ -47,6 +52,61 @@ public class controlaprender implements ActionListener {
             controlmenuprincipal mainmenuc = new controlmenuprincipal(mainmenu,modelmenu);         
             
             
+        }
+        
+        if(e.getSource()==v.regresaraprender){
+            v.dispose();
+            
+            vistaaprender  aprendevis = new vistaaprender();
+            controlaprender aprendec = new controlaprender(aprendevis);
+        }
+        
+        if(e.getSource()==v.ahorros){
+            v.labelahorro.setVisible(true);
+            v.regresaraprender.setVisible(true);
+            
+            v.fondo.setVisible(false);
+            v.ahorros.setVisible(false);
+            v.ingresos.setVisible(false);
+            v.pensiones.setVisible(false);
+            v.interes.setVisible(false);
+            v.regresarx.setVisible(false);
+        }
+        
+        if(e.getSource()==v.ingresos){
+            v.labelpresupuesto.setVisible(true);
+            v.regresaraprender.setVisible(true);
+            
+            v.fondo.setVisible(false);
+            v.ahorros.setVisible(false);
+            v.ingresos.setVisible(false);
+            v.pensiones.setVisible(false);
+            v.interes.setVisible(false);
+            v.regresarx.setVisible(false);
+        }
+        
+        if(e.getSource()==v.pensiones){
+            v.labelpension.setVisible(true);
+            v.regresaraprender.setVisible(true);
+            
+            v.fondo.setVisible(false);
+            v.ahorros.setVisible(false);
+            v.ingresos.setVisible(false);
+            v.pensiones.setVisible(false);
+            v.interes.setVisible(false);
+            v.regresarx.setVisible(false);
+        }
+        
+        if(e.getSource()==v.interes){
+            v.labelinteres.setVisible(true);
+            v.regresaraprender.setVisible(true);
+            
+            v.fondo.setVisible(false);
+            v.ahorros.setVisible(false);
+            v.ingresos.setVisible(false);
+            v.pensiones.setVisible(false);
+            v.interes.setVisible(false);
+            v.regresarx.setVisible(false);
         }
 
     }
